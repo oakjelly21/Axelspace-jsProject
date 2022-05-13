@@ -4,5 +4,9 @@ description: A free guide to all HTML elements and attributes.
 share: "HTML Reference: a free guide to all HTML elements and attributes."
 url: https://oakjelly21.github.io
 markdown: kramdown
+collections:
+  element:
+    output: true
+    permalink: /element/:path/
 permalink: pretty
 exclude: ['node_modules']
