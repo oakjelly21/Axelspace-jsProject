@@ -10,3 +10,5 @@ collections:
     permalink: /element/:path/
 permalink: pretty
 exclude: ['node_modules']
+plugins:
+  - jekyll-diagrams
