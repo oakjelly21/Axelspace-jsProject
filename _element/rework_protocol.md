@@ -7,5 +7,4 @@ non tech-std: false
 mech: true
 elec: false
 ---
-lorem ipsum hello  
 hello world
