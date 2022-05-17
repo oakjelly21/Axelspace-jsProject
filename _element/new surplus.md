@@ -8,7 +8,4 @@ mech: true
 elec: false
 ---
 
-lorem ipsum hello  
-hello world  
-
-
+lorem ipsum
