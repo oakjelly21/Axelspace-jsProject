@@ -8,7 +8,8 @@ mech: true
 elec: false
 ---
 
-lorem ipsum
+lorem ipsum  
+hello world  
 
 {% vegalite %}
 {
