@@ -1,8 +1,14 @@
-title: HTML Reference
-subtitle: "A free guide to HTML"
-description: A free guide to all HTML elements and attributes.
+title: AxelSpace tech standards
+subtitle: "lorem ipsum"
+description: A searchable database of all AxelSpace tech standards
 share: "HTML Reference: a free guide to all HTML elements and attributes."
-url: http://localhost:4000
+url: https://oakjelly21.github.io
 markdown: kramdown
+collections:
+  element:
+    output: true
+    permalink: /element/:path/
 permalink: pretty
 exclude: ['node_modules']
+plugins:
+  - jekyll-diagram
