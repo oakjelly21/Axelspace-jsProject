@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v3.2.0
         with:
           node-version: 14
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
       - run: npm install -g vega-cli vega-lite
 
       # Use GitHub Actions' cache to cache dependencies on servers
