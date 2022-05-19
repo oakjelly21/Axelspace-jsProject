@@ -20,7 +20,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-         # cache: 'npm'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
       - run: npm install -g vega-cli vega-lite
 
       # Use GitHub Actions' cache to cache dependencies on servers
