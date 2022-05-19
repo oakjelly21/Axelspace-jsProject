@@ -21,12 +21,11 @@ jobs:
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
         with:
-          run: npm install -g vega-cli vega-lite
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-
+      - run: npm install -g vega-cli vega-lite
       # Use GitHub Deploy Action to build and deploy to Github
       - uses: jeffreytse/jekyll-deploy-action@v0.3.1
         with:
