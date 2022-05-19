@@ -12,11 +12,16 @@ jobs:
       - uses: actions/checkout@v3
       
       #- uses: actions/cache@v2
-      - uses: kloudtek/kt-gh-action-npm@0.8.2
-        with: 
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Install vega lite  
-        run: npm i vega-cli
+      #- uses: kloudtek/kt-gh-action-npm@0.8.2
+      #  with: 
+      #    token: ${{ secrets.GITHUB_TOKEN }}
+      #- name: Install vega lite  
+      #  run: npm i vega-cli
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'npm'
+      - run: npm install -g vega-cli vega-lite
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
