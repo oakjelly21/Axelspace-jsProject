@@ -2,8 +2,8 @@
 title: "sample"
 layout: single
 experimental: false
-tech-std: false
-non tech-std: true
+tech-std: true
+non tech-std: false
 mech: false
 elec: false
 ---
