@@ -17,12 +17,12 @@ jobs:
       #    token: ${{ secrets.GITHUB_TOKEN }}
       #- name: Install vega lite  
       #  run: npm i vega-cli
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 14
+     # - uses: actions/setup-node@v3
+     #   with:
+      #    node-version: 14
           #cache: 'npm'
           #cache-dependency-path: '**/package-lock.json'
-      - run: npm install -g vega-cli vega-lite
+      #- run: npm install -g vega-cli vega-lite
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
@@ -45,4 +45,4 @@ jobs:
           bundler_ver: '>=0'         # Default is latest bundler version
           cname: ''                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
+          pre_build_commands: 'pacman -S --noconfirm nodejs npm && npm install -g vega-cli vega-lite'     # Installing additional dependencies (Arch Linux)
