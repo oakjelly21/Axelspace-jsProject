@@ -11,5 +11,5 @@ collections:
 permalink: pretty
 exclude: ['node_modules']
 plugins:
-  - asciidoc-kroki
+  - asciidoctor-kroki
   - jekyll-diagrams
