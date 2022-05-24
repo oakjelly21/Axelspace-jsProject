@@ -10,7 +10,7 @@ elec: false
 ## Component and interface diagram
 The hosted payload interface diagram below represents what is explained in this document by showing several types of interface between the hosted payload and the satellite. Each of the interface symbol corresponds to a section of this document. Also it shows some of the satellite components that are mentioned in this document.
 
-{% plantuml %}
+```plantuml
 @startuml
 title
 __Hosted Payload Interface Diagram__
@@ -71,7 +71,7 @@ Environmental_Interface --Payload
 
 
 @enduml
-{% endplantuml %}
+```
 
 
 
