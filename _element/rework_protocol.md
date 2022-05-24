@@ -10,7 +10,7 @@ elec: false
 
 hello world  
 
-
+```vega-lite
 {
   "": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "A simple bar chart with embedded data.",
@@ -27,4 +27,4 @@ hello world
     "y": {"field": "b", "type": "quantitative"}
   }
 }
-
+```
