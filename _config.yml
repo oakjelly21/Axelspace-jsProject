@@ -12,3 +12,4 @@ permalink: pretty
 exclude: ['node_modules']
 plugins:
   - jekyll-diagrams
+  - jekyll-asciidoc
