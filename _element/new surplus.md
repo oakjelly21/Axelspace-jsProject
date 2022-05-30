@@ -18,10 +18,10 @@ lorem ipsum
   </tr>
   {% for bat in site.data.bats %}
   <tr>
-    <td> {bats.a} </td>
-    <td> {bats.b} </td>
-    <td> {bats.c} </td>
-    <td> {bats.d} </td>
+    <td> {{bats.a}} </td>
+    <td> {{bats.b}} </td>
+    <td> {{bats.c}} </td>
+    <td> {{bats.d}} </td>
   </tr>
   {% endfor %}
 </table>
