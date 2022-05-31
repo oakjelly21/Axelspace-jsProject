@@ -1,0 +1,236 @@
+-
+    "": BAT
+-
+    "": Battery
+-
+    "": EPS
+-
+    "": 無し
+-
+    "": 'Left one: BAT appearance Right one: The image of BAT after being installed on inner structure. Just for reference.'
+-
+    "": 筐体内に基板を搭載
+-
+    "": '1)太陽電池から供給される電力を蓄積する。 2)機器へ電力を供給する。'
+-
+    "": '電圧：13.2V 電力容量；66Whr以上 出力電流：22.5A 充電電圧：14.4V 最大充電電流：10A以上 構成：４S2P'
+-
+    "": ""
+-
+    "": '180×75×96mm (Refer to Fig1 in "Drawing" sheet)'
+-
+    "": ""
+-
+    "": 宇宙活動法観点
+-
+    "": Drawing
+-
+    "": TBD
+-
+    "": TBD
+-
+    "": 内部搭載
+-
+    "": 不要
+-
+    "": なし
+-
+    "": CHGと近い方が好ましいがmustではない
+-
+    "": なし
+-
+    "": なし
+-
+    "": なし
+-
+    "": ""
+-
+    "": 'bottom: 9532.27[mm2], back: 5520[mm2], left: 12350[mm2], right: 11728.36[mm2] (Refer to Fig2 in "Drawing" sheet)'
+-
+    "": '10W(20V, ヒーター使用時)'
+-
+    "": TBD
+-
+    "": '0 to 60degC'
+-
+    "": '-'
+-
+    "": '-'
+-
+    "": Drawing
+-
+    "": Drawing
+-
+    "": 'For battery: -20 to 60 degC. In addition, some components of BAT-IF board do not have a temperature range wider than  -40  C to +85 C. For details check: https://axelspace.sharepoint.com/:x:/r/sites/SDG/Shared%20Documents/EPS/GRUS2/Components%20temperature%20range%20verification/B0343_G2_BAT_Bypass_FM.xlsx?d=w94082d1ccf884711863c2b8e96a94d51&csf=1&web=1&e=dFC30C'
+-
+    "": アロジン1200
+-
+    "": 10W（80Ωx2並、20V使用時)
+-
+    "": ""
+-
+    "": 14V
+-
+    "": 0-14.2V
+-
+    "": N/A
+-
+    "": 10.6W
+-
+    "": 'link (needs to be added, link does not open for me)'
+-
+    "": '-'
+-
+    "": 'GND system diagram'
+-
+    "": '-'
+-
+    "": 'link(needs to be updated, link does not open for me)'
+-
+    "": link
+-
+    "": ""
+-
+    "": I2C
+-
+    "": '-'
+-
+    "": '-'
+-
+    "": ""
+-
+    "": 'JAXEL1 QT'
+-
+    "": 'JAXEL1 QT'
+-
+    "": 10krad
+-
+    "": '70MeV proton 10年分'
+-
+    "": ""
+-
+    "": 'link (needs to be added)'
+-
+    "": 有り
+-
+    "": '動作期間 1yr, 47520cycles @DOD50%, 70%BOL容量 '
+-
+    "": 有り
+-
+    "": 保管期間：2年
+-
+    "": 容量
+-
+    "": 'Around 10 years for nominal operation with DoD of around 40%. Please note  that the data used for the estimation is not data from space enviroment. Reference: https://axelspace.atlassian.net/browse/G2-634'
+-
+    "": アクセルスペース
+-
+    "": '①基板／筐体／バッテリ製造 ②基板／筐体／バッテリ組立 ③検査'
+-
+    "": アクセルスペース社内クリーンルーム
+-
+    "": '基板/筐体/バッテリ製造：供給業者（ベースライン機器から変更なし） 基板/筐体/バッテリ組立、検査：アクセルスペース'
+-
+    "": '1.5ヵ月(needs to be updated)'
+-
+    "": '1.5ヵ月 (needs to be updated)'
+-
+    "": '12時間 (needs to be updated)'
+-
+    "": '4時間 (needs to be updated)'
+-
+    "": '15万円 (needs to be updated)'
+-
+    "": '１万円 (needs to be updated)'
+-
+    "": 'link (needs to be added)'
+-
+    "": N/A
+-
+    "": '-'
+-
+    "": 実績あり品使用
+-
+    "": 実績あり品使用
+-
+    "": 実績あり品使用
+-
+    "": 実績あり品使用
+-
+    "": N/A
+-
+    "": N/A
+-
+    "": N/A
+-
+    "": ケーシング変更
+-
+    "": N/A
+-
+    "": N/A
+-
+    "": 要
+-
+    "": 要
+-
+    "": 不要
+-
+    "": 要
+-
+    "": 要
+-
+    "": 要
+-
+    "": 不要
+-
+    "": 不要
+-
+    "": 不要
+-
+    "": 不要
+-
+    "": 不要
+-
+    "": 不要
+-
+    "": 不要
+-
+    "": 可能
+-
+    "": 不要
+-
+    "": 不要
+-
+    "": 可能
+-
+    "": 可能
+-
+    "": 不要
+-
+    "": 可能
+-
+    "": 可能
+-
+    "": 可能
+-
+    "": 可能
+-
+    "": 可能
+-
+    "": 可能
+-
+    "": '3'
+-
+    "": 'Ⅲ　'
+-
+    "": 電気性能試験（単体）
+-
+    "": 温度試験（単体）
+-
+    "": ランダム振動試験（単体）
+-
+    "": インタフェース試験（システムコンフィギュレーションで噛み合わせ）
+-
+    "": ""
+-
+    "": ""
