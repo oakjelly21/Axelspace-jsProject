@@ -10,10 +10,6 @@ elec: false
 
 hello world  
 
-table, th,td{
-  border: 1px solid black;
-  border-collapse: collapse;
-}
 <table>
   <tr>
     <th> a </th>
