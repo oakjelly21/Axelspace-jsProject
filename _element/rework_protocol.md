@@ -14,8 +14,6 @@ hello world
   <tr>
     <th> a </th>
     <th> b </th>
-    <th> c </th>
-    <th> d </th>
   </tr>
   {% for bat in site.data.bats2 %}
   <tr>
