@@ -17,8 +17,7 @@ hello world
   </tr>
   {% for bat in site.data.bats %}
   <tr>
-    <td> {{bat.a}} </td>
-    <td> {{bat.b}} </td>
+    <td> {{bat}} </td>
   </tr>
   {% endfor %}
 </table>
