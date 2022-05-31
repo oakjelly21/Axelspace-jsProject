@@ -21,8 +21,6 @@ hello world
   <tr>
     <td> {{bat.a}} </td>
     <td> {{bat.b}} </td>
-    <td> {{bat.c}} </td>
-    <td> {{bat.d}} </td>
   </tr>
   {% endfor %}
 </table>
