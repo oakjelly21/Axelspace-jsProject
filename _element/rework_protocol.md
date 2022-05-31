@@ -21,4 +21,8 @@ hello world
     <td> {{bat.b}} </td>
   </tr>
   {% endfor %}
+  <tr>
+    <td> ![bat image 1](/assets/bat1.jpg) </td>
+    <td> hello world </td>
+  </tr>
 </table>
