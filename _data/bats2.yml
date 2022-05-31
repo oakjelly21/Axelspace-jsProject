@@ -1,10 +1,16 @@
--a: 頭字語 /Acronym 
+---
+-
+ a: 頭字語 /Acronym 
  b: BAT
--a: 機器概説 /Device Outline 
+-
+ a: 機器概説 /Device Outline 
  b: Battery
--a: 帰属 /Subsystem 
+-
+ a: 帰属 /Subsystem 
  b: EPS
--a: 内部冗長の有無 /Redundancy in the Device 
+-
+ a: 内部冗長の有無 /Redundancy in the Device 
  b: 無し
--a: 外観/Appearance
+-
+ a: 外観/Appearance
  b: Left one: BAT appearance. The image of BAT after being installed on inner structure. Just for reference. 
