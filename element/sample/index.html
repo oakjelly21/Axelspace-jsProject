@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="is-single" data-template="single">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>&lt;&gt; element - AxelSpace tech standards</title>
+    <meta name="description" content="Learn how  works in HTML.">
+    <link rel="stylesheet" type="text/css" href="https://oakjelly21.github.io/css/website.css">
+
+    <meta property="og:url" content="https://oakjelly21.github.io/element/sample/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=" - AxelSpace tech standards">
+    <meta property="og:image" content="https://oakjelly21.github.io/images/html-reference-share.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:description" content="Learn how  works in HTML.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jgthms">
+    <meta name="twitter:creator" content="@jgthms">
+    <meta name="twitter:title" content=" - AxelSpace tech standards">
+    <meta name="twitter:image" content="https://oakjelly21.github.io/images/html-reference-share.png">
+    <meta name="twitter:description" content="Learn how  works in HTML.">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+    
+  </head>
+  <body>
+    <aside class="menu">
+  
+  <nav class="menu-collections">
+    <p><strong>Standards</strong></p>
+    <ul>
+      <li><a class="menu-collection-link" href="https://oakjelly21.github.io">All</a></li>
+      <li><a class="menu-collection-link" href="https://oakjelly21.github.io/experimental/">Experimental</a></li>
+      <li><a class="menu-collection-link" href="https://oakjelly21.github.io/tech-std/">Tech-std</a></li>
+      <li><a class="menu-collection-link" href="https://oakjelly21.github.io/non tech-std/">non tech-std</a></li>
+      <li><a class="menu-collection-link" href="https://oakjelly21.github.io/mech/">Mech</a></li>
+      <li><a class="menu-collection-link" href="https://oakjelly21.github.io/elec/">Elec</a></li>
+    </ul>
+    <!-- <p><strong>HTML Templates</strong></p>
+    <ul>
+      <li><a class="menu-collection-link" href="https://oakjelly21.github.io/templates/content/">Content</a></li>
+      <li><a class="menu-collection-link" href="https://oakjelly21.github.io/templates/forms/">Forms</a></li>
+      <li><a class="menu-collection-link" href="https://oakjelly21.github.io/templates/table/">Tables</a></li>
+    </ul>
+    <p><strong><a class="menu-collection-link" href="https://oakjelly21.github.io/html-global-attributes/">Global attributes</a></strong></p> -->
+  </nav>
+  
+    <nav id="menu-nav" class="menu-nav">
+      <div class="menu-search">
+        <input id="menu-search-input" type="search" autocomplete="off" placeholder="Search for an element">
+        <i class="icon is-search"></i>
+      </div>
+      <div id="menu-list" class="menu-list">
+        <ul id="menu-list-ul" class="menu-list-ul">
+          
+            <li class="menu-item" data-element-name="new surplus"><a class="menu-link" href="https://oakjelly21.github.io/element/new surplus" data-element-name="new surplus"><span class="item-name">new surplus</span></a></li>
+<li class="menu-item" data-element-name="rework_protocol"><a class="menu-link" href="https://oakjelly21.github.io/element/rework_protocol" data-element-name="rework_protocol"><span class="item-name">rework_protocol</span></a></li>
+
+          
+        </ul>
+        <i id="menu-shadow-top" class="menu-list-shadow is-top"></i>
+        <i id="menu-shadow-bottom" class="menu-list-shadow is-bottom"></i>
+      </div>
+      <a id="menu-nav-close" class="menu-close">
+        <i class="icon is-close"></i>
+        <strong>Close</strong>
+      </a>
+    </nav>
+  
+  
+</aside>
+
+
+
+    <main class="single">
+      <div class="ola">
+        <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<div id="bsa" class="bsa-cpc"><div id="bsaShadow" class="bsa-shadow"></div></div>
+<script>
+(function(){
+  _bsa.init('default', 'CVAIP5QL', 'placement:htmlreferenceio', {
+    target: '.bsa-cpc',
+    align: 'horizontal',
+    disable_css: 'true'
+  });
+})();
+</script>
+
+      </div>
+      <section class="elements elements--single">
+        
+        <h2 id="component-and-interface-diagram">Component and interface diagram</h2>
+<p>The hosted payload interface diagram below represents what is explained in this document by showing several types of interface between the hosted payload and the satellite. Each of the interface symbol corresponds to a section of this document. Also it shows some of the satellite components that are mentioned in this document.</p>
+
+<pre><code class="language-plantuml">@startuml
+title
+__Hosted Payload Interface Diagram__
+end title
+
+scale 0.8
+skinparam nodesep 30
+skinparam ranksep 50
+left to right direction
+
+rectangle {
+component Satellite {
+  component Connector_S2PH
+  component OBC
+  component STR_PZ_Panel
+  component Thermometer
+  component Thermal_Insulator
+  component Fasteners
+  component Others
+}
+component GroundSystem
+}
+component Payload 
+component PayloadUser
+component Payload_Harness
+together {
+interface Electrical_Interface as "Electical\nI/F"
+interface Data_Interface as "Data I/F"
+interface Mechanical_Interface as "Thermal I/F\nStructural I/F"
+interface Orbit_Interface as "Orbit I/F"
+interface Electrical_Connector_Interface as  "Electrical\nConnector\nI/F"
+interface Environmental_Interface as "Environmental\nI/F"
+}
+interface UserInterface as "User I/F"
+
+PayloadUser -- UserInterface
+UserInterface -- GroundSystem
+GroundSystem -left- Satellite
+OBC -- Connector_S2PH
+OBC -- Electrical_Interface
+OBC -- Data_Interface
+Connector_S2PH -- Electrical_Connector_Interface
+STR_PZ_Panel -- Mechanical_Interface
+Thermometer -- Mechanical_Interface
+Thermal_Insulator -- Mechanical_Interface
+Fasteners -- Mechanical_Interface
+Satellite -- Orbit_Interface
+Satellite -- Environmental_Interface
+
+Electrical_Connector_Interface -- Payload_Harness 
+Payload_Harness -- Payload
+
+Electrical_Interface -- Payload
+Data_Interface -- Payload
+Mechanical_Interface -- Payload
+Orbit_Interface --Payload
+Environmental_Interface --Payload
+
+
+@enduml
+</code></pre>
+
+<div class="jekyll-diagrams diagrams plantuml">
+  Command Not Found: java
+</div>
+
+<h3 id="responsibility-assignment-payload-specific">Responsibility assignment (<strong>Payload specific</strong>)</h3>
+
+<p>Responsibility of participating organization for each component is listed below.</p>
+
+<pre><code class="language-vega-lite">{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 400,
+  "data": {"values":[
+    {
+      "Item":"Payload",
+      "Organization": "ASPINA",
+      "Symbol": "O"
+    }, {
+      "Item":"Payload harness",
+      "Organization":"ASPINA",
+      "Symbol": "O"
+    }, {
+      "Item":"Satellite",
+      "Organization":"Axel",
+      "Symbol": "O"
+    }, {
+      "Item":"GroundSystem",
+      "Organization":"Axel",
+      "Symbol": "O"
+    }, {
+      "Item":"PayloadUser",
+      "Organization": "ASPINA",
+      "Symbol": "O"
+    }
+    ]
+  },
+  "layer":[{
+    "mark": {"type": "text", "filled": false}
+  },{
+    "mark": {"type": "rect", "opacity": 0}
+  }],
+  "encoding": {
+    "y": {"field": "Item", "type": "nominal",
+    "sort": "null",    
+    "axis": { "tickBand": "extent"}
+    },
+    "x": {
+      "field": "Organization", "type": "ordinal",
+      "sort": "null",    
+      "axis": { 
+        "tickBand": "extent",
+        "orient": "top",
+        "labelAngle": 0
+      }
+    },
+    "text": {"field": "Symbol"}
+  },
+  "config": {
+    "axis": {"grid": true, "tickBand": "extent"}
+  }
+}
+</code></pre>
+
+      </section>
+    </main>
+
+    <script async type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82634666-4', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <script src="https://oakjelly21.github.io/javascript/clipboard.min.js"></script>
+    <script src="https://oakjelly21.github.io/javascript/main.js"></script>
+    <script src="https://oakjelly21.github.io/javascript/single.js"></script>
+    <noscript>
+  <style type="text/css">
+    #hello {
+      min-height: 0;
+    }
+
+    #huggingFace {
+      display: block;
+    }
+
+    #carbon,
+    #placeholder {
+      display: none;
+    }
+  </style>
+</noscript>
+
+  </body>
+</html>

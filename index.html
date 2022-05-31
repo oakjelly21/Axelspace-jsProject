@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="is-index" data-template="index">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>AxelSpace tech standards - A searchable database of all AxelSpace tech standards</title>
+    <link rel="stylesheet" type="text/css" href="https://oakjelly21.github.io/css/website.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://oakjelly21.github.io/favicons/apple-touch-icon.png?v=201702051021">
+<link rel="icon" type="image/png" href="https://oakjelly21.github.io/favicons/favicon-32x32.png?v=201702051021" sizes="32x32">
+<link rel="icon" type="image/png" href="https://oakjelly21.github.io/favicons/favicon-16x16.png?v=201702051021" sizes="16x16">
+<link rel="manifest" href="https://oakjelly21.github.io/favicons/manifest.json?v=201702051021">
+<link rel="mask-icon" href="https://oakjelly21.github.io/favicons/safari-pinned-tab.svg?v=201702051021" color="#fd4011">
+<link rel="shortcut icon" href="https://oakjelly21.github.io/favicons/favicon.ico?v=201702051021">
+<meta name="msapplication-config" content="https://oakjelly21.github.io/favicons/browserconfig.xml?v=201702051021">
+<meta name="theme-color" content="#fd4011">
+
+  </head>
+  <body>
+   
+    <main class="index">
+      <div class="index-collections">
+        <div class="container">
+          <strong>Standards:</strong>
+          <a href="https://oakjelly21.github.io/experimental/">Experimental</a>
+          <a href="https://oakjelly21.github.io/tech-std/">tech-std</a>
+          <a href="https://oakjelly21.github.io/non tech-std/">non tech-std</a>
+          <a href="https://oakjelly21.github.io/mech/">mech</a>
+          <a href="https://oakjelly21.github.io/elec/">elec</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="index-left">
+          <article class="finder">
+  <div class="menu-search">
+    <input id="finder-input" type="search" autocomplete="off" placeholder="Search all standards here">
+    <i class="icon is-search"></i>
+  </div>
+  <div id="finder-checkboxes" class="finder-checkboxes">
+    <label class="light light--experimental is-active"><input type="checkbox" name="experimental" checked>experimental</label>
+    <label class="light light--meta is-active"><input type="checkbox" name="tech-std" checked>tech-std</label>
+    <label class="light light--selfclosing is-active"><input type="checkbox" name="non tech-std" checked>non tech-std</label>
+    <label class="light light--inline is-active"><input type="checkbox" name="mech" checked>mech</label>
+    <label class="light light--block is-active"><input type="checkbox" name="elec" checked>elec</label>
+  </div>
+  <div id="finder-list" class="finder-list">
+    
+<article class="finder-item finder-item--inline" data-element-name="new surplus" data-experimental="false" data-tech-std="false" data-non tech-std="" data-mech="true" data-elec="false"><a class="finder-item-link" href="https://oakjelly21.github.io/element/new surplus"><span class="item-name">new surplus</span></a><div class="finder-item-meta"><span class="light light--meta">tech-std</span><span class="light light--selfclosing">non tech-std</span><span class="light light--inline">mech</span><span class="light light--block">elec</span></div></article>
+
+<article class="finder-item finder-item--inline" data-element-name="rework_protocol" data-experimental="false" data-tech-std="false" data-non tech-std="" data-mech="true" data-elec="false"><a class="finder-item-link" href="https://oakjelly21.github.io/element/rework_protocol"><span class="item-name">rework_protocol</span></a><div class="finder-item-meta"><span class="light light--meta">tech-std</span><span class="light light--selfclosing">non tech-std</span><span class="light light--inline">mech</span><span class="light light--block">elec</span></div></article>
+
+<article class="finder-item finder-item--inline" data-element-name="rework_protocol" data-experimental="false" data-tech-std="false" data-non tech-std="" data-mech="true" data-elec="false"><a class="finder-item-link" href="https://oakjelly21.github.io/element/rework_protocol"><span class="item-name">rework_protocol</span></a><div class="finder-item-meta"><span class="light light--meta">tech-std</span><span class="light light--selfclosing">non tech-std</span><span class="light light--inline">mech</span><span class="light light--block">elec</span></div></article>
+
+<article class="finder-item finder-item--inline" data-element-name="sample" data-experimental="false" data-tech-std="false" data-non tech-std="" data-mech="false" data-elec="false"><a class="finder-item-link" href="https://oakjelly21.github.io/element/sample"><span class="item-name">sample</span></a><div class="finder-item-meta"><span class="light light--meta">tech-std</span><span class="light light--selfclosing">non tech-std</span><span class="light light--inline">mech</span><span class="light light--block">elec</span></div></article>
+
+
+
+  </div>
+</article>
+
+<script type="text/javascript">
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  var $searchInput = document.getElementById('finder-input');
+  var $finderList = document.getElementById('finder-list');
+  var $finderItems = document.querySelectorAll('.finder-item');
+  var $finderCheckboxes = document.querySelectorAll('#finder-checkboxes input');
+  var lights = {
+    experimental: true,
+    meta: true,
+    selfClosing: true,
+    inline: true,
+    block: true,
+  }
+  var isFocused = false;
+  var isSearching = false;
+  var isModaling = false;
+  var currentMatch = -1;
+  var matches = initializeMatches($finderItems);
+
+  if ($searchInput) {
+    $searchInput.addEventListener('focus', function(event) {
+      isFocused = true;
+      isSearching = true;
+    });
+
+    $searchInput.addEventListener('blur', function(event) {
+      isFocused = false;
+      if (this.value === '') {
+        globalReset();
+      }
+    });
+
+    $searchInput.addEventListener('keyup', function(event) {
+      var query = this.value.toLowerCase();
+      isFocused = (this === document.activeElement);
+
+      if (isFocused) {
+        isSearching = true;
+
+        if (query.length > 0) {
+          matches = [];
+          currentMatch = -1;
+          $finderList.classList.add('is-searching');
+          Array.prototype.forEach.call($finderItems, function($el, index) {
+            var elementName = $el.dataset.elementName;
+            var isMatch = highlightQuery($el, elementName, query);
+
+            if (isMatch && !$el.classList.contains('is-hidden')) {
+              matches.push({
+                DOMIndex: index,
+                elementName: elementName,
+              });
+            }
+          });
+        } else {
+          $finderList.classList.remove('is-searching');
+          Array.prototype.forEach.call($finderItems, function($el) {
+            var $elName = $el.querySelector('.item-name');
+            $elName.innerHTML = $el.dataset.elementName;
+          });
+        }
+      }
+    });
+
+    Array.prototype.forEach.call($finderCheckboxes, function($el) {
+      $el.addEventListener('change', function(event) {
+        lights[this.name] = this.checked;
+        changeLights();
+      });
+    });
+
+    window.addEventListener('click', function(event) {
+      if (!isFocused) {
+        isSearching = false;
+        cleanMenu($finderItems, false, true);
+      }
+    });
+
+    window.addEventListener('keydown', function(event) {
+      var key = event.code || event.key || false;
+
+      switch (key) {
+      case 'Enter':
+        if (isSearching && currentMatch > -1) {
+          event.preventDefault();
+          var elementName = matches[currentMatch].elementName;
+          var $target = document.getElementById(elementName);
+
+          if ($target) {
+            $target.scrollIntoView();
+          } else {
+            window.location = window.location.origin + '/element/' + elementName;
+          }
+        }
+        break;
+      case 'Escape':
+        if (isModaling) {
+          closeModal();
+        } else {
+          isSearching = false;
+          globalReset();
+        }
+        break;
+      case 'ArrowUp':
+      case 'ArrowDown':
+        if (isSearching) {
+          event.preventDefault();
+          if (isFocused) {
+            $searchInput.blur();
+          }
+          var increment = (key === 'ArrowDown');
+          currentMatch = navigateMenu($finderItems, matches, currentMatch, increment);
+
+          if (currentMatch === -1) {
+            $searchInput.focus();
+          }
+          break;
+        }
+      }
+    });
+
+    function checkLights() {
+      Array.prototype.forEach.call($finderCheckboxes, function($el) {
+        lights[this.name] = this.checked;
+      });
+    }
+
+    function changeLights() {
+      Array.prototype.forEach.call($finderItems, function($el, index) {
+        var hide = false;
+
+        Object.keys(lights).forEach(function(key) {
+          // Check if we hide "experimental"
+          if (!lights[key]) {
+            hide = (hide) || ($el.dataset[key] == 'true');
+          }
+        });
+
+        if (hide) {
+          $el.classList.add('is-hidden');
+        } else {
+          $el.classList.remove('is-hidden');
+        }
+      });
+    }
+
+    function globalReset() {
+      isFocused = false;
+      $searchInput.value = '';
+      $searchInput.blur();
+      currentMatch = -1;
+      matches = initializeMatches($finderItems);
+      $finderList.classList.remove('is-searching');
+      cleanMenu($finderItems, true, true);
+    }
+
+    checkLights();
+    changeLights();
+  }
+
+});
+
+</script>
+
+        </div>
+      </div>
+    </main>
+    <div id="modal-share" class="modal">
+  <div class="modal-box">
+    <p class="modal-title">Share this HTML element</p>
+    <p class="modal-url">
+      <input id="modal-input" class="input" type="text" value="https://oakjelly21.github.io/" readonly>
+      <button id="modal-copy" class="button is-primary" data-clipboard-target="#modal-input">Copy</button>
+    </p>
+    <p class="modal-social">
+      <a id="modal-twitter" class="button is-twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fhtmlreference.io&text=HTML%20Reference%3A%20a%20guide%20to%20all%20%23HTML%20elements%20and%20attributes">Share on Twitter</a>
+      <a id="modal-facebook" class="button is-facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fhtmlreference.io">Share on Facebook</a>
+    </p>
+    <a id="modal-close" class="modal-close"></a>
+  </div>
+</div>
+
+    <script async type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82634666-4', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <script src="https://oakjelly21.github.io/javascript/clipboard.min.js"></script>
+    <script src="https://oakjelly21.github.io/javascript/main.js"></script>
+    <script src="https://oakjelly21.github.io/javascript/index.js"></script>
+    <noscript>
+  <style type="text/css">
+    #hello {
+      min-height: 0;
+    }
+
+    #huggingFace {
+      display: block;
+    }
+
+    #carbon,
+    #placeholder {
+      display: none;
+    }
+  </style>
+</noscript>
+
+  </body>
+</html>
