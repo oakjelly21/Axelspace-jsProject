@@ -10,7 +10,7 @@ elec: false
 
 hello world  
 
-<table>
+<table style = "margin-left:10px">
   <tr>
     <th> a </th>
     <th> b </th>
