@@ -19,6 +19,9 @@ hello world
   <tr>
     {% for col in bat%}
     <td> {{col}} </td>
+      {% for scol in col%}
+      <td> {{scol}} </td>
+      {% endfor %}
     {% endfor %}
   </tr>
   {% endfor %}
