@@ -1,0 +1,10 @@
+{% capture var %}{{ svar}}{% endcapture %}
+{% if var.first %}
+  {% for svar in var %}
+  <tr>
+    {% include tablegen.html with svar %}
+  </tr> 
+  {% endfor %}
+{% else %}
+    <td> {{var}} </td>
+{% endif %}
