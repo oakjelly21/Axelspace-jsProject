@@ -11,22 +11,23 @@ elec: false
 hello world  
 
 <table style = "margin-left:10px">
-  <tr>
-    <th> a </th>
-    <th> b </th>
-  </tr>
-  {% for bat in site.data.bats %}
-  <td> {{bat.size}}</td>
-  <td> {{bat[0].size}}</td>
-  <td> {{bat[1].size}}</td>
-  <tr>
-    
-    
-    <td> {{bat[0]}} </td>
-    <td> {{bat[1]}} </td>
-    <td> {{bat[2]}} </td>
-    <td> {{bat[1][0]}} </td>
-      
-  </tr>
-  {% endfor %}
+{% tablerow bat in site.data.bats%}
+  {{bat}}
+  {% endtablerow %}
 </table>
+ # <tr>
+ #   <th> a </th>
+ #   <th> b </th>
+ # </tr>
+ # {% for bat in site.data.bats %}
+  #<td> {{bat[0].size}}</td>
+  #<td> {{bat[1].size}}</td>
+  #<tr>
+    
+    
+  #  <td> {{bat[0]}} </td>
+   # <td> {{bat[1]}} </td>
+   # <td> {{bat[1][0]}} </td>
+      
+  #</tr>
+  #{% endfor %}
