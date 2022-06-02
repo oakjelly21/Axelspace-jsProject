@@ -17,15 +17,17 @@ hello world
   </tr>
   {% for bat in site.data.bats %}
     {% for var in bat %}
+      <tr>
       {% if var.first %}
-        <tr> 
-          <td>{{var}} </td>
-        </tr>
-      {% else %}
+        {% for svar in var %}
         <tr>
-          
-        </tr>
+          <td>{{svar}} </td>
+        </tr> 
+        {% endfor %}
+      {% else %}
+          <td> {{var}} </td>
       {% endif %}
+      </tr>
     {% endfor %}  
   {% endfor %}
 </table>
