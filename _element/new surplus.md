@@ -19,6 +19,7 @@ hello world
   <tr> {{bat.size}}</tr>
   <tr>
     {% for col in bat%}
+    <tr> {{col.size}}</tr>
     <td> {{col}} </td>
       {% for scol in col%}
       <td> {{scol}} </td>
