@@ -1,11 +1,13 @@
-
-{% for svar in var %}
-  <tr>
-    {% if var.first %}
-      {% include tablegen.html var=svar %}
-    {% else %}
-      <td> {{svar}} </td>
-    {% endif %}
-  </tr> 
-{% endfor %}
-
+{% if var.first %}
+  {% for svar in var %}
+    <tr>
+      {% if var.first %}
+        {% include tablegen.html var=svar %}
+      {% else %}
+        <td> {{svar}} </td>
+      {% endif %}
+    </tr> 
+  {% endfor %}
+{% else %}
+  <td> {{var}} </td>
+{% endif %}
