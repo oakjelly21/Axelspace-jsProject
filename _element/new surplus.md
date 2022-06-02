@@ -20,13 +20,10 @@ hello world
   <td> {{bat[0].size}}</td>
   <td> {{bat[1].size}}</td>
   <tr>
-    {% for col in bat%}
     
-    <td> {{col}} </td>
-      {% for scol in col%}
-      <td> {{scol}} </td>
-      {% endfor %}
-    {% endfor %}
+    
+    <td> {{bat[0]}} </td>
+      
   </tr>
   {% endfor %}
 </table>
