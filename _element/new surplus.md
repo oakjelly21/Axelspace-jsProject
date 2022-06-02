@@ -22,8 +22,7 @@ hello world
       {% if var.first %}
         {% for svar in var %}
         <tr>
-          <td>{{svar[0]}} </td>
-          <td>{{svar[1]}} </td>
+          {% include tablegen.html %}
         </tr> 
         {% endfor %}
       {% else %}
