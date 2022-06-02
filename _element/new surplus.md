@@ -11,7 +11,22 @@ elec: false
 hello world  
 
 <table style = "margin-left:10px">
-{% tablerow bat in site.data.bats%}
-  {{bat}}
-  {% endtablerow %}
+  <tr>
+    <th> a </th>
+    <th> b </th>
+  </tr>
+  {% for bat in site.data.bats %}
+    {% for var in bat %}
+      {% if var.first%1}
+  <tr> 
+    <td>{{var}} </td>
+  </tr>
+      {% else %}
+  <tr>
+    <td> {{bat[0]}} </td>
+    <td> {{bat[1]}} </td>
+  </tr>
+      {% endif %}
+    {% endfor %}  
+  {% endfor %}
 </table>
