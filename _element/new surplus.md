@@ -23,6 +23,7 @@ hello world
     
     
     <td> {{bat[0]}} </td>
+    <td> {{bat[1]}} </td>    
       
   </tr>
   {% endfor %}
