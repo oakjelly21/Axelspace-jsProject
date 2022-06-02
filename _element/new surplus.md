@@ -17,7 +17,7 @@ hello world
   </tr>
   {% for bat in site.data.bats %}
     {% for var in bat %}
-      {% if var.first%1}
+      {% if var.first %}
         <tr> 
           <td>{{var}} </td>
         </tr>
