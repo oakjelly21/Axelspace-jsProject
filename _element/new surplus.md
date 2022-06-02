@@ -16,6 +16,8 @@ hello world
     <th> b </th>
   </tr>
   {% for bat in site.data.bats %}
+  <td> {{bat.size}}</td>
+  <td> {{bat[0].size}}</td>
   <td> {{bat[1].size}}</td>
   <tr>
     {% for col in bat%}
