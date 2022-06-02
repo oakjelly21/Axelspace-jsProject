@@ -15,19 +15,3 @@ hello world
   {{bat}}
   {% endtablerow %}
 </table>
- # <tr>
- #   <th> a </th>
- #   <th> b </th>
- # </tr>
- # {% for bat in site.data.bats %}
-  #<td> {{bat[0].size}}</td>
-  #<td> {{bat[1].size}}</td>
-  #<tr>
-    
-    
-  #  <td> {{bat[0]}} </td>
-   # <td> {{bat[1]}} </td>
-   # <td> {{bat[1][0]}} </td>
-      
-  #</tr>
-  #{% endfor %}
