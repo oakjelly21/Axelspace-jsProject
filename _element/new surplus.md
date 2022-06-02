@@ -22,7 +22,7 @@ hello world
       {% if var.first %}
         {% for svar in var %}
         <tr>
-          {% include tablegen.html %}
+          {% include tablegen.html var=svar %}
         </tr> 
         {% endfor %}
       {% else %}
