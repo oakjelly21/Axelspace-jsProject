@@ -24,6 +24,7 @@ hello world
     
     <td> {{bat[0]}} </td>
     <td> {{bat[1]}} </td>
+    <td> {{bat[2]}} </td>
     <td> {{bat[1][0]}} </td>
       
   </tr>
