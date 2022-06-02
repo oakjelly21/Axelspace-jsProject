@@ -16,10 +16,10 @@ hello world
     <th> b </th>
   </tr>
   {% for bat in site.data.bats %}
-  <tr> {{bat.size}}</tr>
+  <td> {{bat[1].size}}</td>
   <tr>
     {% for col in bat%}
-    <tr> {{col.size}}</tr>
+    
     <td> {{col}} </td>
       {% for scol in col%}
       <td> {{scol}} </td>
