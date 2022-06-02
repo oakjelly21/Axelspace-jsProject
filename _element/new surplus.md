@@ -16,18 +16,21 @@ hello world
     <th> b </th>
   </tr>
   {% for bat in site.data.bats %}
+  <tr>
     {% for var in bat %}
-      <tr>
+      
       {% if var.first %}
         {% for svar in var %}
         <tr>
-          <td>{{svar}} </td>
+          <td>{{svar[0]}} </td>
+          <td>{{svar[1]}} </td>
         </tr> 
         {% endfor %}
       {% else %}
           <td> {{var}} </td>
       {% endif %}
-      </tr>
-    {% endfor %}  
+      
+    {% endfor %}
+  </tr>
   {% endfor %}
 </table>
