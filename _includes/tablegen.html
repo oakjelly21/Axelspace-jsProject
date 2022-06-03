@@ -1,7 +1,7 @@
 {% if var.first %}
   {% for svar in var %}
     <tr>
-      {% if var.first %}
+      {% if svar.first %}
         {% include tablegen.html var=svar %}
       {% else %}
         <td> {{svar}} </td>
