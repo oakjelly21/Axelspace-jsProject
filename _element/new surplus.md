@@ -17,19 +17,28 @@ hello world
   </tr>
   {% for bat in site.data.bats %}
   <tr>
-    {% for var in bat %}
-      
+    {% for var in bat %} 
       {% if var.first %}
-        {% for svar in var %}
         <tr>
-          {% include tablegen.html var=svar %}
+        {% for svar in var %}
+            {% if svar.first %}
+             <tr>
+                  {% for ssvar in svar %}
+                      <tr>
+                        <td>{{ssvar}}</td>
+                      </tr>
+                   {% endfor %}
+                {% else %}
+                <td>{{svar}}</td>
+            {% endif %}
+            </tr>
+        {% endfor %}  
         </tr> 
-        {% endfor %}
+       {% endfor %}
       {% else %}
           <td> {{var}} </td>
       {% endif %}
       
-    {% endfor %}
   </tr>
   {% endfor %}
 </table>
