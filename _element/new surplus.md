@@ -28,9 +28,9 @@ hello world
                         <td>{{ssvar}}</td>
                       </tr>
                    {% endfor %}
-                {% else %}
+               {% else %}
                 <td>{{svar}}</td>
-            {% endif %}
+              {% endif %}
             </tr>
         {% endfor %}  
         </tr> 
@@ -38,7 +38,7 @@ hello world
       {% else %}
           <td> {{var}} </td>
       {% endif %}
-      
+   {% endfor %}   
   </tr>
   {% endfor %}
 </table>
