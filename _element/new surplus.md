@@ -20,15 +20,7 @@ hello world
     {% for var in bat %} 
       {% if var.first %}
         <tr>
-          { % for svar in var %}
-            {% if svar.first %}
-               <tr>
-                <td>{{svar}}</td>
-               </tr>
-            {% else %}
-                <td> {{svar}}</td>
-            {% endif %}
-          {% endfor %}
+          
         </tr>
       {% else %}
           <td> {{var}} </td>
