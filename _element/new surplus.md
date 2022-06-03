@@ -22,7 +22,7 @@ hello world
         <tr>
           
           
-          { % include tablegen.html var %}
+          { % include tablegen.html with var %}
           
           
           
