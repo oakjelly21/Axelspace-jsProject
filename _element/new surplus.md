@@ -21,6 +21,12 @@ hello world
       {% if var.first %}
         <tr>
           
+          
+          { % include tablegen.html var=var %}
+          
+          
+          
+          
         </tr>
       {% else %}
           <td> {{var}} </td>
