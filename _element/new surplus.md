@@ -19,7 +19,9 @@ hello world
   <tr>
     {% for var in bat %} 
       {% if var.first %}
-          {% include tablegen.html with var %}
+      <tr>
+          {% include tablegen.html with var=var %}
+      </tr>
       {% else %}
           <td> {{var}} </td>
       {% endif %}
