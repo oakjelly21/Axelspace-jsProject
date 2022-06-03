@@ -20,21 +20,8 @@ hello world
     {% for var in bat %} 
       {% if var.first %}
         <tr>
-        {% for svar in var %}
-            {% if svar.first %}
-             <tr>
-                  {% for ssvar in svar %}
-                      <tr>
-                        <td>{{ssvar}}</td>
-                      </tr>
-                   {% endfor %}
-               {% else %}
-                <td>{{svar}}</td>
-              {% endif %}
-            </tr>
-        {% endfor %}  
-        </tr> 
-       {% endfor %}
+          {{var}}
+        </tr>
       {% else %}
           <td> {{var}} </td>
       {% endif %}
