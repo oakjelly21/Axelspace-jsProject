@@ -1,11 +1,7 @@
 {% if var.first %}
   {% for svar in var %}
     <tr>
-      {% if svar.first %}
-      <td></td>
-      {% else %}
         <td> {{svar}} </td>
-      {% endif %}
     </tr> 
   {% endfor %}
 {% else %}
