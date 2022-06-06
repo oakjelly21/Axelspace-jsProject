@@ -1,9 +1,4 @@
-
-<td> hello</td>
-<td> {{include.pass}}</td>
-<td> {{i}}</td>
-{% for svar in i %}
-<td>hello </td>      
+{% for svar in include.i %}      
             {% if svar.first %}
                <tr>
                 <td>{{svar}}</td>
