@@ -21,7 +21,7 @@ hello world
       {% if var.first %}
       <tr>
         <td>{{var}}</td>
-          {% include tablegen.html pass=var %}
+          {% include tablegen.html pass="test" %}
       </tr>
       {% else %}
           <td> {{var}} </td>
