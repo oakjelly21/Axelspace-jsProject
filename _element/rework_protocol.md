@@ -15,10 +15,17 @@ hello world
     <th> a </th>
     <th> b </th>
   </tr>
-  {% for bat in site.data.bats2 %}
+  {% for bat in site.data.general %}
   <tr>
-    <td> {{bat.a}} </td>
-    <td> {{bat.b}} </td>
+    {% for var in bat %} 
+      {% if var.first %}
+      <tr>
+          {% include tablegen.html i=var %}
+      </tr>
+      {% else %}
+          <td> {{var}} </td>
+      {% endif %}
+   {% endfor %}   
   </tr>
   {% endfor %}
 </table>
