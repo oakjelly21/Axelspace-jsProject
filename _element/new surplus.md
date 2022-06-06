@@ -20,6 +20,7 @@ hello world
     {% for var in bat %} 
       {% if var.first %}
       <tr>
+        <td>{{var}}</td>
           {% include tablegen.html i=var %}
       </tr>
       {% else %}
