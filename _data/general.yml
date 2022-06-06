@@ -1,0 +1,20 @@
+頭字語 /Acronym: GNSS (GNSS Receiver)
+機器概説 /Device Outline: Ultra-small power-efficient GNSS receiver / 超小型・省電力GNSS受信機
+帰属 /Subsystem: ADCS
+内部冗長の有無 /Redundancy in the Device: -
+基本情報:
+    主要諸元/Main specifications:
+        外観/Appearance: <img src = "/assets/gen1.jpg"><img src = "/assets/bat2.jpg"> <br> <a href="http://www.kenkai.jaxa.jp/kakushin/interview/01/interview14.html"> http://www.kenkai.jaxa.jp/kakushin/interview/01/interview14.html </a>
+        構成・内部配置/Configuration(internal structure): 1 board, 1 antenna in the box. Refer to "Config" sheet more in detail.
+        機能/Functions: TBC
+        Performance / 性能: TBC
+        Mechanical IF / 機械IF:
+          Dimensions / 形状・寸法: 52 mm×52 mm×11 mm
+          Mass Property / 質量・質量特性: 45 g
+        Thermal IF / 熱的IF:
+          Contact Area / 接触面積[mm2]:  2455
+          Heat Generated / 発生熱量 [W]: 0.15
+          Heat Capacity / 熱容量 [J/K] : TBC
+  寿命:
+    Lifetime Limiting Conditions / 動作期間 or 回数、動作DUTY等: 無し
+          
