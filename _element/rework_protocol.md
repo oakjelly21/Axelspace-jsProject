@@ -10,7 +10,7 @@ elec: false
 
 hello world 
 <style>
-  td {bgcolor:unset;}
+  td {background-color:unset;}
   font {all:unset;}
 </style>
 
