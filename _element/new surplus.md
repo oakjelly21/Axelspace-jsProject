@@ -23,7 +23,7 @@ hello world
           {% include tablegen.html i=var %}
       </tr>
       {% else %}
-          <td> {{var}} </td>
+          <td bgcolor = 'green'> {{var}} </td>
       {% endif %}
    {% endfor %}   
   </tr>
