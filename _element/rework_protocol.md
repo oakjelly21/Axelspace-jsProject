@@ -15,17 +15,8 @@ hello world
     <th> a </th>
     <th> b </th>
   </tr>
-  {% for bat in site.data.general %}
   <tr>
-    {% for var in bat %} 
-      {% if var.first %}
-      <tr>
-          {% include tablegenwithoutcolour.html i=var %}
-      </tr>
-      {% else %}
-          <td> {{var}} </td>
-      {% endif %}
-   {% endfor %}   
+      {% include tablegenwithoutcolour.html i=site.data.general %}
   </tr>
-  {% endfor %}
+     
 </table>
