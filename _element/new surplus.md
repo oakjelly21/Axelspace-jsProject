@@ -15,17 +15,7 @@ hello world
     <th> Parameter </th>
     <th> value </th>
   </tr>
-  {% for bat in site.data.bats %}
   <tr>
-    {% for var in bat %} 
-      {% if var.first %}
-      <tr>
-          {% include tablegen.html i=var %}
-      </tr>
-      {% else %}
-          <td bgcolor = 'green'> {{var}} </td>
-      {% endif %}
-   {% endfor %}   
+     {% include tablegen.html i=site.data.bats %} 
   </tr>
-  {% endfor %}
 </table>
