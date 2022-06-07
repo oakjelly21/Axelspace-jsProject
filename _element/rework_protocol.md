@@ -10,7 +10,7 @@ elec: false
 
 hello world 
 <style>
-  td {all:unset;}
+  
   font {all:unset;}
 </style>
 
