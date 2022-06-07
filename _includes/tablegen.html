@@ -1,5 +1,5 @@
-{% for svar in include.i %}    
-     {% assign counter = 0 %}       
+{% assign counter = 0 %}
+{% for svar in include.i %}           
             {% if svar.first %}
                <tr>
                 {% include tablegen.html i=svar %}
