@@ -10,7 +10,7 @@ elec: false
 
 hello world 
 <style>
-  td {bgcolor:default;}
+  td {bgcolor:white;}
 </style>
 
 <table style = "margin-left:10px">
