@@ -1,9 +1,15 @@
-{% for svar in include.i %}      
+{% for svar in include.i %}    
+     {% assign counter = 1 %}       
             {% if svar.first %}
                <tr>
                 {% include tablegen.html i=svar %}
                </tr>
             {% else %}
+                {% if counter%2==0 %}
+                <td bgcolor = 'green' > {{svar}}</td>
+                {% else %}
                 <td> {{svar}}</td>
+                {% endif %}
+                 {% assign counter = counter + 1 %}
             {% endif %}
 {% endfor %}
