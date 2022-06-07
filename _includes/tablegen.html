@@ -5,7 +5,7 @@
                 {% include tablegen.html i=svar %}
                </tr>
             {% else %}
-                {% if counter%2==0 %}
+                {% if counter%2!=0 %}
                     <td bgcolor = 'green' > {{svar}}</td>
                     <td>1</td>
                 {% else %}
