@@ -8,7 +8,10 @@ mech: true
 elec: false
 ---
 
-hello world  
+hello world 
+<style>
+  td {bgcolor:default;}
+</style>
 
 <table style = "margin-left:10px">
   <tr>
