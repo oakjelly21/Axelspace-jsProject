@@ -12,8 +12,8 @@ hello world
 
 <table style = "margin-left:10px">
   <tr>
-    <th> a </th>
-    <th> b </th>
+    <th> Parameter </th>
+    <th> value </th>
   </tr>
   {% for bat in site.data.bats %}
   <tr>
