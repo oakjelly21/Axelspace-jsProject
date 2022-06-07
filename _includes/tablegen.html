@@ -5,13 +5,12 @@
                 {% include tablegen.html i=svar %}
                </tr>
             {% else %}
-                {% if counter%2!=0 %}
+                {% if counter==0 %}
                     <td bgcolor = 'green' > {{svar}}</td>
-                    <td>1</td>
+                   {% assign counter = 1 %}
                 {% else %}
                     <td> {{svar}}</td>
-                     <td>0</td>
+                     {% assign counter = 0 %}
                 {% endif %}
-                 {% assign counter = counter + 1 %}
             {% endif %}
 {% endfor %}
