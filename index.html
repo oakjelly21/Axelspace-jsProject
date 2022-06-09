@@ -8,6 +8,12 @@ route: index
     <meta charset="UTF-8">
   </head>
   <body>
-
+<ul>
+  {% for x in site.data %}
+    <li>
+      {{ x.name }}
+    </li>
+  {% endfor %}
+</ul>
   </body>
 </html>
