@@ -6,8 +6,16 @@ route: index
 <html>
   <head>
     <meta charset="UTF-8">
-    
-        
+    {% raw %}
+    <script>
+      function disptable()
+      {
+        let title  = document.getElementById("link").innerHTML;
+        let inp  = '{% include tablegen.html i=site.data.' + title + ' %}';
+        document.body.appendChild(inp);
+      }
+    </script>
+    {% endraw %}    
   </head>
   <body>
     <nav>
@@ -19,15 +27,6 @@ route: index
         {% endfor %}
       </ul>
     </nav>
-   <script>
-      function disptable()
-      {
-        let title  = document.getElementById("link").innerHTML;
-        
-        document.body.appendChild('{% include tablegen.html i=site.data.');
-        document.body.appendChild(title);
-        document.body.appendChild(' %}');
-      }
-    </script>
+   
   </body>
 </html>
