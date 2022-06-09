@@ -9,14 +9,14 @@ route: index
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     {% raw %}
     <script>
-      $(function disptable(title)
+      function disptable(title)
       {
         //let title  = document.getElementById("link").innerHTML;
         //let inp  = '{% include tablegen.html i=site.data.'.concat(title).concat( ' %}');
         let inp  = '/element/'.concat(title);
         let place = document.getElementById('insert');
-        $('#insert).load(inp);
-      });
+        $('#insert').load(inp);
+      }
     </script>
     {% endraw %}    
   </head>
