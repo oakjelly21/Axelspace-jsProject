@@ -10,7 +10,7 @@ route: index
       function disptable()
       {
         let title  = document.getElementById("link").innerHTML;
-        let inp = '{% include tablegen.html i=site.data.' + title + ' %}';
+        let a = ('{% include tablegen.html i=site.data.'.concat(title)).concat(' %}');
         document.body.appendChild(inp);
       }
     </script>
