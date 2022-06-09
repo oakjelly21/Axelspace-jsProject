@@ -8,9 +8,9 @@ route: index
     <meta charset="UTF-8">
     {% raw %}
     <script>
-      function disptable()
+      function disptable(title)
       {
-        let title  = document.getElementById("link").innerHTML;
+        //let title  = document.getElementById("link").innerHTML;
         let inp  = '{% include tablegen.html i=site.data.'.concat(title).concat( ' %}');
         let place = document.getElementById('insert')
         place.innerHTML = inp
@@ -22,8 +22,8 @@ route: index
     <nav>
       <ul>
         {% for x in site.element %}
-        <li onclick="disptable()">
-          <a  id='link' >{{x.title}}</a>
+        <li >
+          <a  onclick="disptable(this.innerHTML)" id='link' >{{x.title}}</a>
         </li>
         {% endfor %}
       </ul>
