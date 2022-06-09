@@ -8,12 +8,14 @@ route: index
     <meta charset="UTF-8">
   </head>
   <body>
-<ul>
-  {% for x in site.element %}
-    <li href={{x}}>
-      {{ x.title }}
-    </li>
-  {% endfor %}
-</ul>
+    <nav>
+      <ul>
+        {% for x in site.element %}
+        <li>
+          <a href = "{{site.baseurl}}/element/{{ x.title }}">{{x.title}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>  
   </body>
 </html>
