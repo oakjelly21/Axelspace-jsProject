@@ -6,16 +6,26 @@ route: index
 <html>
   <head>
     <meta charset="UTF-8">
+    <script>
+      function disptable()
+      {
+        let title  = document.getElementById("link").innerHTML
+        let inp = "{% include tablegen.html i=site.data." + title + " %}"
+        document.body.appendChild(inp)
+      }
+    </script>
+        
   </head>
   <body>
     <nav>
       <ul>
         {% for x in site.element %}
-        <li>
-          <a href = "{{site.baseurl}}/element/{{ x.title }}">{{x.title}}</a>
+        <li onclick="disptable()" id='link'>
+          {{x.title}}
         </li>
         {% endfor %}
       </ul>
-    </nav>  
+    </nav>
+   
   </body>
 </html>
