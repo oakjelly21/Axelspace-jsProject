@@ -12,7 +12,8 @@ route: index
       {
         let title  = document.getElementById("link").innerHTML;
         let inp  = '{% include tablegen.html i=site.data.' + title + ' %}';
-        document.body.appendChild(inp);
+        let place = document.getElementById('insert')
+        place.appendChild(inp);
       }
     </script>
     {% endraw %}    
@@ -27,6 +28,13 @@ route: index
         {% endfor %}
       </ul>
     </nav>
-   
+    <table style = "margin-left:10px">
+      <tr>
+        <th> Parameter </th>
+        <th> value </th>
+      </tr>
+      <tr id ='insert'>
+      </tr>
+    </table>
   </body>
 </html>
