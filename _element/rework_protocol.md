@@ -1,6 +1,6 @@
 ---
 title: "rework_protocol"
-layout: single
+layout: simple
 experimental: false
 tech-std: false
 non tech-std: false
