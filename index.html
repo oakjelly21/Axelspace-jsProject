@@ -12,9 +12,10 @@ route: index
       function disptable(title)
       {
         //let title  = document.getElementById("link").innerHTML;
-        let inp  = '{% include tablegen.html i=site.data.'.concat(title).concat( ' %}');
-        let place = document.getElementById('insert')
-        $('#insert).load('/element/'.concat(title))
+        //let inp  = '{% include tablegen.html i=site.data.'.concat(title).concat( ' %}');
+        let inp  = '/element/'.concat(title);
+        let place = document.getElementById('insert');
+        $('#insert).load(inp);
       }
     </script>
     {% endraw %}    
