@@ -1,5 +1,5 @@
 ---
-title: "bats"
+title: "new surplus"
 layout: simple
 experimental: false
 tech-std: false
@@ -8,7 +8,7 @@ mech: true
 elec: false
 ---
 
-<table style = "margin-left:10px">
+<table style = "margin-left:10px" id = 'cont'>
   <tr>
     <th> Parameter </th>
     <th> value </th>
