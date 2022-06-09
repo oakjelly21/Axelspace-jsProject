@@ -1,6 +1,5 @@
 ---
 title: "rework_protocol"
-layout: simple
 experimental: false
 tech-std: false
 non tech-std: false
@@ -8,7 +7,6 @@ mech: true
 elec: false
 ---
 
-hello world 
 <style>
   td {background-color:unset;}
   font {all:unset;}
