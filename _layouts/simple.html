@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      
+      table, th,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        {% for x in site.element %}
+        <li>
+          <a href = "{{site.baseurl}}/element/{{ x.title }}">{{x.title}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {{content}}
+  </body>
+</html>
