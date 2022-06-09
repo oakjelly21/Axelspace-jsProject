@@ -24,7 +24,7 @@ route: index
       {
         let title  = document.getElementById("link").innerHTML;
         let inp = ('{% include tablegen.html i=site.data.'.concat(title)).concat(' %}');
-        document.body.appendChild(inp);
+        console.loge(inp);
       }
     </script>
   </body>
