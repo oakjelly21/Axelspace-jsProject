@@ -13,7 +13,7 @@ route: index
         let title  = document.getElementById("link").innerHTML;
         let inp  = '{% include tablegen.html i=site.data.' + title + ' %}';
         let place = document.getElementById('insert')
-        place.appendChild(inp);
+        place.innerHTML = inp
       }
     </script>
     {% endraw %}    
