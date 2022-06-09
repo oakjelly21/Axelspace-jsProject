@@ -10,7 +10,7 @@ route: index
   <body>
 <ul>
   {% for x in site.element %}
-    <li>
+    <li href={{x}}>
       {{ x.title }}
     </li>
   {% endfor %}
