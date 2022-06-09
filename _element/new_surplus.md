@@ -1,5 +1,5 @@
 ---
-title: "new surplus"
+title: "new_surplus"
 experimental: false
 tech-std: false
 non tech-std: false
