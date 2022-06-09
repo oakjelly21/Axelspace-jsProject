@@ -23,8 +23,10 @@ route: index
       function disptable()
       {
         let title  = document.getElementById("link").innerHTML;
-        let inp = ('{% include tablegen.html i=site.data.'.concat(title)).concat(' %}');
-        console.loge(inp);
+        //let inp = ('{% include tablegen.html i=site.data.'.concat(title)).concat(' %}');
+        document.body.appendChild('{% include tablegen.html i=site.data.');
+        document.body.appendChild(title);
+        document.body.appendChild(' %}');
       }
     </script>
   </body>
