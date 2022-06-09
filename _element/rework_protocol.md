@@ -14,8 +14,8 @@ elec: false
 
 <table style = "margin-left:10px" id = 'cont'>
   <tr>
-    <th> a </th>
-    <th> b </th>
+    <th> Parameter </th>
+    <th> value </th>
   </tr>
   <tr>
       {% include tablegenwithoutcolour.html i=site.data.general %}
