@@ -1,6 +1,5 @@
 ---
 title: "new surplus"
-layout: simple
 experimental: false
 tech-std: false
 non tech-std: false
