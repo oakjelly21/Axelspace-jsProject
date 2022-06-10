@@ -7,7 +7,7 @@ mech: true
 elec: false
 ---
 
-<table style = "margin-left:10px" id = 'cont'>
+<table id = 'cont'>
   <tr>
     <th> Parameter </th>
     <th> value </th>
