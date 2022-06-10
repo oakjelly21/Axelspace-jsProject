@@ -16,7 +16,8 @@ th
 }
 td.right
 {
-  background-color: green;
+  border-collapse: collapse;
+  background-color: #74992e;
 }
 font.right
 {
