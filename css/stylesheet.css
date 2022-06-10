@@ -2,7 +2,6 @@ table
 {
   margin-left:10px;
   border: 1px solid black;
-  border-collapse: collapse;
 }
 td
 {
@@ -16,9 +15,9 @@ th
 }
 td.right
 {
-  background-color ='green'
+  background-color ='green';
 }
 font.right
 {
-  color = 'white'
+  color = 'white';
 }
