@@ -8,7 +8,7 @@ mech: true
 elec: false
 ---
 
-hello world  
+
 
 <table style = "margin-left:10px">
   <tr>
