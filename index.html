@@ -10,18 +10,18 @@ route: index
     <link href = "{{site.baseurl}}/css/stylesheet.css" type ="text/css" rel = "stylesheet">
     {% raw %}
     <script>
-      function disptable(title)
+      function disptable(button)
       {
         //let title  = document.getElementById("link").innerHTML;
         //let inp  = '{% include tablegen.html i=site.data.'.concat(title).concat( ' %}');
-        let inp  = '/element/'.concat(title);
+        button.classList.toggle('active');
+        let inp  = '/element/'.concat(button.innerHTML);
+        
         let place = document.getElementById('insert');
         $('#insert').load(inp);
       }
-      const button = document.querySelector('.button');
 
-      button.addEventListener('click', () => {
-      button.classList.toggle('active');});
+      });
     </script>
     {% endraw %}    
   </head>
@@ -31,7 +31,7 @@ route: index
         <ul>
           {% for x in site.element %}
           <li style ='padding-top:5pxpx; padding-bottom:5px;'>
-            <button class = 'button' href = "#" onclick="disptable(this.innerHTML)">{{x.title}}</button>
+            <button class = 'button' href = "#" onclick="disptable(this)">{{x.title}}</button>
           </li>
           {% endfor %}
         </ul>
