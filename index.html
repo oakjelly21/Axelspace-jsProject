@@ -22,16 +22,18 @@ route: index
     {% endraw %}    
   </head>
   <body>
-    <nav>
-      <ul>
-        {% for x in site.element %}
-        <li >
-          <a  href = "#" onclick="disptable(this.innerHTML)">{{x.title}}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </nav>
-    <div id = 'insert'>
+    <div class = 'splitL'>
+      <nav>
+        <ul>
+          {% for x in site.element %}
+          <li >
+            <a  href = "#" onclick="disptable(this.innerHTML)">{{x.title}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>   
+    <div id = 'insert' class = 'splitR'>
     </div>
     </table>
   </body>
