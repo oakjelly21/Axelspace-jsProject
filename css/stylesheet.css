@@ -45,4 +45,19 @@ div.splitR
   padding-top: 20px;
   right: 0;
 }
-  
+.button {
+  position: relative;
+  padding: 0.5em 1em;
+  border: 0;
+  border-radius: 0.5em;
+  background-color: pink;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.button:active,
+.active {
+  top: 2px;
+  left: 1px;
+  box-shadow: none;
+}
