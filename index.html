@@ -10,12 +10,14 @@ route: index
     <link href = "{{site.baseurl}}/css/stylesheet.css" type ="text/css" rel = "stylesheet">
     {% raw %}
     <script>
-      function disptable(button)
+      function disptable(cbutton)
       {
         //let title  = document.getElementById("link").innerHTML;
         //let inp  = '{% include tablegen.html i=site.data.'.concat(title).concat( ' %}');
-        button.classList.toggle('active');
-        let inp  = '/element/'.concat(button.innerHTML);
+        const buttons = document.querySelectorAll('.button');
+        buttons.forEach(button => button.classList.remove('active'));
+        cbutton.classList.toggle('active');
+        let inp  = '/element/'.concat(cbutton.innerHTML);
         
         let place = document.getElementById('insert');
         $('#insert').load(inp);
