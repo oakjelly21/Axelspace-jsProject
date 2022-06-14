@@ -19,7 +19,7 @@ elec: false
     <th> value </th>
   </tr>
   <tr>
-      {% include tablegenwithoutcolour.html i=site.data.general %}
+      {% include tablegen.html i=site.data.general %}
   </tr>
      
 </table>
