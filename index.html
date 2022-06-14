@@ -18,6 +18,10 @@ route: index
         let place = document.getElementById('insert');
         $('#insert').load(inp);
       }
+      const button = document.querySelector('.button');
+
+      button.addEventListener('click', () => {
+      button.classList.toggle('active');});
     </script>
     {% endraw %}    
   </head>
