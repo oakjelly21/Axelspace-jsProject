@@ -1,23 +1,6 @@
 <aside class="menu">
   
-  <nav class="menu-collections">
-    <p><strong>Standards</strong></p>
-    <ul>
-      <li><a class="menu-collection-link{% if page.route == 'index' %} menu-collection-link--active{% endif %}" href="{{site.url}}">All</a></li>
-      <li><a class="menu-collection-link{% if page.collection_name == 'Experimental' %} menu-collection-link--active{% endif %}" href="{{site.url}}/experimental/">Experimental</a></li>
-      <li><a class="menu-collection-link{% if page.collection_name == 'Tech-std' %} menu-collection-link--active{% endif %}" href="{{site.url}}/tech-std/">Tech-std</a></li>
-      <li><a class="menu-collection-link{% if page.collection_name == 'Non tech-std' %} menu-collection-link--active{% endif %}" href="{{site.url}}/non tech-std/">non tech-std</a></li>
-      <li><a class="menu-collection-link{% if page.collection_name == 'Mech' %} menu-collection-link--active{% endif %}" href="{{site.url}}/mech/">Mech</a></li>
-      <li><a class="menu-collection-link{% if page.collection_name == 'Elec' %} menu-collection-link--active{% endif %}" href="{{site.url}}/elec/">Elec</a></li>
-    </ul>
-    <!-- <p><strong>HTML Templates</strong></p>
-    <ul>
-      <li><a class="menu-collection-link{% if page.template_name == 'Content' %} menu-collection-link--active{% endif %}" href="{{site.url}}/templates/content/">Content</a></li>
-      <li><a class="menu-collection-link{% if page.template_name == 'Forms' %} menu-collection-link--active{% endif %}" href="{{site.url}}/templates/forms/">Forms</a></li>
-      <li><a class="menu-collection-link{% if page.template_name == 'Tables' %} menu-collection-link--active{% endif %}" href="{{site.url}}/templates/table/">Tables</a></li>
-    </ul>
-    <p><strong><a class="menu-collection-link" href="{{site.url}}/html-global-attributes/">Global attributes</a></strong></p> -->
-  </nav>
+  
   {% if page.route != "index" %}
     <nav id="menu-nav" class="menu-nav">
       <div class="menu-search">
