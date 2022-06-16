@@ -8,19 +8,19 @@ mech: true
 elec: false
 ---
 
-hello world 
+
 <style>
   td {background-color:unset;}
   font {all:unset;}
 </style>
 
-<table style = "margin-left:10px">
+<table >
   <tr>
     <th> a </th>
     <th> b </th>
   </tr>
   <tr>
-      {% include tablegenwithoutcolour.html i=site.data.general %}
+      {% include tablegen.html i=site.data.general %}
   </tr>
      
 </table>
