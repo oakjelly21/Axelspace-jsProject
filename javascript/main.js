@@ -225,56 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  var $modalTwitter = document.getElementById('modal-twitter');
-  var $modalFacebook = document.getElementById('modal-facebook');
 
-  $modalTwitter.addEventListener('click', function(event) {
-    event.preventDefault();
-    window.open(twitterURL);
-  });
-
-  $modalFacebook.addEventListener('click', function(event) {
-    event.preventDefault();
-    window.open(facebookURL);
-  });
-
-  // Modal
-  var $modalShare = document.getElementById('modal-share');
-  var $modalClose = document.getElementById('modal-close');
-
-  $modalShare.addEventListener('click', function(event) {
-    event.preventDefault();
-    if (event.target === $modalShare) {
-      closeModal();
-    } else {
-      return true;
-    }
-  });
-
-  $modalClose.addEventListener('click', function(event) {
-    event.preventDefault();
-    closeModal();
-  });
-
-  function openModal() {
-    isModaling = true;
-    $modalShare.classList.add('is-active');
-  }
-
-  function closeModal() {
-    isModaling = false;
-    $modalShare.classList.remove('is-active');
-    facebookURL = 'https://www.facebook.com/sharer.php?u=http%3A%2F%2Fhtmlreference.io';
-    twitterURL = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fhtmlreference.io&text=HTML%20Reference%3A%20a%20guide%20to%20all%20%23HTML%20elements%20and%20attributes';
-  }
-
-  var modalClipboard = new Clipboard('#modal-copy');
-
-  modalClipboard.on('success', function(e) {
-    e.clearSelection();
-    e.trigger.innerHTML = 'Copied';
-    setTimeout(function() { e.trigger.innerHTML = 'Copy'; }, 500);
-  });
 
   // Element: Launch animations
   var $launchButtons = document.querySelectorAll('.element-animation-toggle');
@@ -394,8 +345,4 @@ function limitNumber(value, min, max) {
   return Math.min(Math.max(value, min), max);
 }
 
-function buildTwitterURL(encodedURL, elementName) {
-  var text = 'Here\'s how ' + elementName + ' works in #HTML';
-  var encodedText = encodeURIComponent(text);
-  return 'https://twitter.com/intent/tweet?url=' + encodedURL + '&text=' + encodedText;
-}
+
