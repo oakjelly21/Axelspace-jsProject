@@ -192,39 +192,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Element: Copy to clipboard
-  var clipboard = new Clipboard('[data-clipboard-target],[data-clipboard-text]');
-
-  Array.prototype.forEach.call(document.querySelectorAll('[data-clipboard-target],[data-clipboard-text]'), function($el) {
-    $el.addEventListener('mouseenter', function(e) {
-      e.target.classList.remove('is-copied');
-    });
-  });
-
-  clipboard.on('success', function(e) {
-    e.clearSelection();
-    e.trigger.classList.add('is-copied');
-  });
-
-  // Element: Share modal
-  var $elementShares = document.querySelectorAll('.element-share');
-  var $modalInput = document.getElementById('modal-input');
-  var baseURL = '' + window.location.origin + window.location.pathname;
-  baseURL = 'https://htmlreference.io/';
-  var facebookURL = 'https://www.facebook.com/sharer.php?u=http%3A%2F%2Fhtmlreference.io';
-  var twitterURL = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fhtmlreference.io&text=HTML%20Reference%3A%20a%20guide%20to%20all%20%23HTML%20elements%20and%20attributes';
-
-  Array.prototype.forEach.call($elementShares, function($el, index) {
-    $el.addEventListener('click', function(e) {
-      var elementName = $el.dataset.elementName;
-      var shareURL = baseURL + 'element/' + elementName;
-      $modalInput.value = shareURL;
-      encodedURL = encodeURIComponent(shareURL);
-      facebookURL = 'https://www.facebook.com/sharer.php?u=' + encodedURL;
-      twitterURL = buildTwitterURL(encodedURL, elementName);
-      openModal();
-    });
-  });
-
 
 
   // Element: Launch animations
