@@ -14,7 +14,7 @@ site.data.{{page.title}}
 {% endcapture %}
 
 
-{{x}}
+{{{{x}}}}
 
 <table style = "margin-left:10px">
   <tr>
