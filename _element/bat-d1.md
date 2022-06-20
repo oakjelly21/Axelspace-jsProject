@@ -14,7 +14,7 @@ mission: false
 {% endcapture %}
 
 
-{{x}}
+
 
 <table style = "margin-left:10px">
   <tr>
@@ -23,6 +23,6 @@ mission: false
   </tr>
   <tr>
      
-     {% include tablegen.html i = site.data.bat-d1 %} 
+     {{x}}
   </tr>
 </table>
