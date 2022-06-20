@@ -9,7 +9,7 @@ elec: false
 ---
 
 {% assign x = site.data.{{page.title}} %}
-
+hello
 {{x}}
 
 <table style = "margin-left:10px">
@@ -19,6 +19,6 @@ elec: false
   </tr>
   <tr>
      
-     {% include tablegen.html i=x %} 
+     {% include tablegen.html i='x' %} 
   </tr>
 </table>
