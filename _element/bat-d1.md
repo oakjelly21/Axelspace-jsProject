@@ -9,7 +9,7 @@ elec: false
 mission: false
 ---
 
-{% assign x = site.data.{{page.title}} %}
+{% assign x = {{page.title}} %}
 
 
 {{x}}
