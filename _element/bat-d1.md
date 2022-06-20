@@ -8,7 +8,9 @@ mech: true
 elec: false
 ---
 
+{% assign x = site.data.{{page.title}} %}
 
+{{x}}
 
 <table style = "margin-left:10px">
   <tr>
@@ -16,7 +18,7 @@ elec: false
     <th> value </th>
   </tr>
   <tr>
-     {% assign x = site.data.{{page.title}} %}
+     
      {% include tablegen.html i=x %} 
   </tr>
 </table>
