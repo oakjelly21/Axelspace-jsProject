@@ -9,7 +9,7 @@ elec: false
 ---
 
 {% capture x %}
-'site.data.{{page.title}}'
+site.data.{{page.title}}.yml
 {% endcapture %}
 {{x}}
 
