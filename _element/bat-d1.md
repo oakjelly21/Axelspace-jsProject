@@ -8,8 +8,9 @@ mech: true
 elec: false
 ---
 
-{% assign x = site.data.{{page.title}} %}
-hello
+{% capture x %}
+site.data.{{page.title}}
+{% endcapture %}
 {{x}}
 
 <table style = "margin-left:10px">
