@@ -9,9 +9,9 @@ elec: false
 mission: false
 ---
 
-{% capture x %}
-site.data.{{page.title}}
-{% endcapture %}
+{% assign x = site.data.{{page.title}} %}
+
+
 {{x}}
 
 <table style = "margin-left:10px">
