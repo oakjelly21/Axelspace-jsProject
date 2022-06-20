@@ -16,6 +16,7 @@ elec: false
     <th> value </th>
   </tr>
   <tr>
-     {% include tablegen.html i='site.data.{{page.title}}' %} 
+     {% assign x = site.data.{{page.title}} %}
+     {% include tablegen.html i=x %} 
   </tr>
 </table>
