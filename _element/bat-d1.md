@@ -1,5 +1,5 @@
 ---
-title: "bat-d1.yml"
+title: "bat-d1"
 layout: single
 experimental: false
 tech-std: false
