@@ -1,5 +1,5 @@
 ---
-title: "new surplus"
+title: "bat-d1"
 layout: single
 experimental: false
 tech-std: false
@@ -16,6 +16,6 @@ elec: false
     <th> value </th>
   </tr>
   <tr>
-     {% include tablegen.html i=site.data.bats %} 
+     {% include tablegen.html i=site.data.{% title %} %} 
   </tr>
 </table>
