@@ -9,7 +9,9 @@ elec: false
 mission: false
 ---
 
-{% assign x = {{page.title}} %}
+{% capture x %}
+site.data.{{page.title}}
+{% endcapture %}
 
 
 {{x}}
@@ -21,6 +23,6 @@ mission: false
   </tr>
   <tr>
      
-     {% include tablegen.html i = x %} 
+     {% include tablegen.html i = {{'{{x}}'}} %} 
   </tr>
 </table>
