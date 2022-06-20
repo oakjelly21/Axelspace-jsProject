@@ -23,6 +23,6 @@ site.data.{{page.title}}
   </tr>
   <tr>
      
-     {% include tablegen.html i = {{ x | jsonify}} %} 
+     {% include tablegen.html i = {{x}} %} 
   </tr>
 </table>
