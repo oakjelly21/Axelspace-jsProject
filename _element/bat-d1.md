@@ -10,11 +10,11 @@ mission: false
 ---
 
 {% capture x %}
-site.data.{{page.title}}
+{% include tablegen.html i = site.data.bat-d1 %} 
 {% endcapture %}
 
 
-{{{{x}}}}
+{{x}}
 
 <table style = "margin-left:10px">
   <tr>
