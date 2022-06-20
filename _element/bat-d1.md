@@ -20,6 +20,6 @@ site.data.{{page.title}}.yml
   </tr>
   <tr>
      
-     {% include tablegen.html i = site.data.bat-d1 %} 
+     {% include tablegen.html i = x %} 
   </tr>
 </table>
