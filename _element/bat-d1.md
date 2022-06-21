@@ -11,7 +11,7 @@ mission: 'false'
 
 {% assign y = {{page.title}} | prepend: 'site.data.' %}
 {{y}}
-
+{{site.data[page.title]}}
 {% capture x %}
 {% include tablegen.html i = y %} 
 {% endcapture %}
