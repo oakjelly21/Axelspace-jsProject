@@ -13,7 +13,7 @@ mission: 'false'
 {{y}}
 
 {% capture x %}
-{% include tablegen.html i = site.data.bat-d1 %} 
+{% include tablegen.html i = y %} 
 {% endcapture %}
 
 
