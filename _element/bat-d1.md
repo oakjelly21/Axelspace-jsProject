@@ -1,12 +1,12 @@
 ---
 title: "bat-d1"
-layout: single
-aocs: false
-eps: true
-cdh: false
-comm: false
-str: false
-mission: false
+layout: 'single'
+aocs: 'false'
+eps: 'true'
+cdh: 'false'
+comm: 'false'
+str: 'false'
+mission: 'false'
 ---
 
 {% capture x %}
