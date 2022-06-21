@@ -9,7 +9,7 @@ str: 'false'
 mission: 'false'
 ---
 
-{% assign y = {{page.title}} | prepend: site.data. %}
+{% assign y = {{page.title}} | prepend: 'site.data.' %}
 {{y}}
 
 {% capture x %}
