@@ -1,11 +1,12 @@
 ---
-title: "rework_protocol"
+title: "gnss-d1"
 layout: single
-experimental: false
-tech-std: false
-non tech-std: false
-mech: true
-elec: false
+aocs: true
+eps: false
+cdh: false
+comm: false
+str: false
+mission: false
 ---
 
 
@@ -20,7 +21,7 @@ elec: false
     <th> b </th>
   </tr>
   <tr>
-      {% include tablegen.html i=site.data.general %}
+      {% include tablegen.html i=site.data.gnss-d1 %}
   </tr>
      
 </table>
