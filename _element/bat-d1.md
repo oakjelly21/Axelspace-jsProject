@@ -9,6 +9,9 @@ str: 'false'
 mission: 'false'
 ---
 
+{% assign y = site.data | append: {{page.title}} %}
+{{y}}
+
 {% capture x %}
 {% include tablegen.html i = site.data.bat-d1 %} 
 {% endcapture %}
