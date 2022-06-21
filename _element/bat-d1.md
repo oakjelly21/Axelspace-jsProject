@@ -9,7 +9,7 @@ str: 'false'
 mission: 'false'
 ---
 
-{% assign y = site.data.{{page.title}} %}
+{% assign y = {{page.title}} %}
 {{y}}
 
 {% capture x %}
