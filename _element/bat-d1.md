@@ -9,7 +9,7 @@ str: 'false'
 mission: 'false'
 ---
 
-{% assign y = site.data | append: {{page.title}} | jsonify %}
+{% assign y = site.data. | append: {{page.title}} %}
 {{y}}
 
 {% capture x %}
