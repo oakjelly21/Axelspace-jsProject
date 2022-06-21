@@ -10,7 +10,7 @@ mission: false
 ---
 
 {% capture x %}
-{% include tablegen.html i = site.data.{{page.title}}.yml %} 
+{% include tablegen.html i = site.data.bat-d1 %} 
 {% endcapture %}
 
 
