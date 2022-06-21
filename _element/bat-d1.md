@@ -1,11 +1,11 @@
 ---
 title: "bat-d1"
 layout: single
-experimental: false
-tech-std: false
-non tech-std: false
-mech: true
-elec: false
+aocs: false
+eps: true
+cdh: false
+comm: false
+str: false
 mission: false
 ---
 
