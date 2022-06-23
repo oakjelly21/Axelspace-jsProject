@@ -11,7 +11,7 @@ mission: 'false'
 ---
 
 {% capture y %}
-{{site.data.[page.title]}}
+{{site.data.[page.title]| json_string}}
 {% endcapture %}
 
 {% capture x %}
