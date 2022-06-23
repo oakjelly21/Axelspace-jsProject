@@ -7,7 +7,7 @@ cdh: 'false'
 comm: 'false'
 str: 'false'
 mission: 'false'
-data: 頭字語 /Acronym: GNSS (GNSS Receiver)
+stuff: 頭字語 /Acronym: GNSS (GNSS Receiver)
       機器概説 /Device Outline: Ultra-small power-efficient GNSS receiver / 超小型・省電力GNSS受信機
       帰属 /Subsystem: ADCS
       内部冗長の有無 /Redundancy in the Device: 無し
@@ -40,7 +40,7 @@ data: 頭字語 /Acronym: GNSS (GNSS Receiver)
     <th> b </th>
   </tr>
   <tr>
-      {% include tablegen.html i=data %}
+      {% include tablegen.html i=page.stuff %}
   </tr>
      
 </table>
