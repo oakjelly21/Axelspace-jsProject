@@ -10,7 +10,7 @@ mission: 'false'
 ---
 
 {% capture y %}
-{{site.data.[page.title] | jsonify }}
+{{site.data.[page.title] | json }}
 {% endcapture %}
 
 {% capture x %}
@@ -25,7 +25,7 @@ mission: 'false'
     <th> value </th>
   </tr>
   <tr>
-    {% include tablegen.html i = {{y}} %} 
+    {% include tablegen.html i = y %} 
      
   </tr>
 </table>
