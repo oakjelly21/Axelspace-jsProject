@@ -24,6 +24,6 @@ mission: 'false'
   </tr>
   <tr>
      
-     {% include tablegen.html i = site.data[page.title] %} 
+     {{x}}
   </tr>
 </table>
