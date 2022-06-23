@@ -9,10 +9,10 @@ str: 'false'
 mission: 'false'
 ---
 
-{% capture y %}
-{{site.data[page.title]}}
+
+
 {% capture x %}
-{% include tablegen.html i = y %} 
+{% include tablegen.html i ={{site.data[page.title]}} %} 
 {% endcapture %}
 
 
