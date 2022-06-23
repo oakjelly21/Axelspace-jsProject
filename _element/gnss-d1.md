@@ -7,7 +7,7 @@ cdh: 'false'
 comm: 'false'
 str: 'false'
 mission: 'false'
-stuff: 頭字語 /Acronym: GNSS (GNSS Receiver)
+stuff:'頭字語 /Acronym: GNSS (GNSS Receiver)
       機器概説 /Device Outline: Ultra-small power-efficient GNSS receiver / 超小型・省電力GNSS受信機
       帰属 /Subsystem: ADCS
       内部冗長の有無 /Redundancy in the Device: 無し
@@ -25,7 +25,7 @@ stuff: 頭字語 /Acronym: GNSS (GNSS Receiver)
                 Heat Generated / 発生熱量 [W]: 0.15
                 Heat Capacity / 熱容量 [J/K] : TBC
           寿命:
-              Lifetime Limiting Conditions / 動作期間 or 回数、動作DUTY等: 無し
+              Lifetime Limiting Conditions / 動作期間 or 回数、動作DUTY等: 無し'
 ---
 
 
