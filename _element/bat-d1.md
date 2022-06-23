@@ -24,7 +24,7 @@ stuff:
 {{site.data.[page.title]}}
 {% endcapture %}
 
-{% capture x %}
+{% capture k %}
 {% include tablegen.html i =site.data.bat-d1%} 
 {% endcapture %}
 
@@ -33,5 +33,5 @@ stuff:
 
 
 
-{% include tbheadgen.html x = page.stuff[1] %} 
+{% include tbheadgen.html x = page.stuff %} 
 
