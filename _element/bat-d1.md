@@ -37,5 +37,5 @@ data:
 
 {% endfor %}
 
-{% include tbheadgen.html x = y %} 
+{% include tbheadgen.html x = data %} 
 
