@@ -8,7 +8,7 @@ cdh: 'false'
 comm: 'false'
 str: 'false'
 mission: 'false'
-data:
+stuff:
 -頭字語 /Acronym: BAT
 -機器概説 /Device Outline: Battery
 -帰属 /Subsystem: EPS
@@ -28,16 +28,12 @@ data:
 {% include tablegen.html i =site.data.bat-d1%} 
 {% endcapture %}
 
-{{y}}
+{{page.stuff}}
 
-{{page.data}}
 
-{% for test in k %}
-{{test}}<br>
-<br>
 
 
 {% endfor %}
 
-{% include tbheadgen.html x = page.data %} 
+{% include tbheadgen.html x = page.stuff %} 
 
