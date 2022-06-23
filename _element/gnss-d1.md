@@ -40,7 +40,7 @@ stuff:'頭字語 /Acronym: GNSS (GNSS Receiver)
     <th> b </th>
   </tr>
   <tr>
-      {% include tablegen.html i=page.stuff %}
+      {% include tablegen.html i=site.data.gnss-d1 %}
   </tr>
      
 </table>
