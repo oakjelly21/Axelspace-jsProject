@@ -25,7 +25,7 @@ mission: 'false'
     <th> value </th>
   </tr>
   <tr>
-    {% include tablegen.html i = y %} 
+    {% include tablegen.html i = site.data.page.title %} 
      
   </tr>
 </table>
