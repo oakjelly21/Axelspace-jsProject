@@ -12,7 +12,7 @@ mission: 'false'
 {{site.data[page.title]}}
 
 {% capture x %}
-{% include tablegen.html i ={{page.title}} %} 
+{% include tablegen.html i =site.data.bat-d1%} 
 {% endcapture %}
 
 
