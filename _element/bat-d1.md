@@ -18,6 +18,7 @@ mission: 'false'
 {% include tablegen.html i =site.data.bat-d1%} 
 {% endcapture %}
 
+{% assign k = y |  split: ',' %}
 {{y}}
 
 {% for test in y%}
