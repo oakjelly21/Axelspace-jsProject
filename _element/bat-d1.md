@@ -9,8 +9,7 @@ str: 'false'
 mission: 'false'
 ---
 
-{% assign y = {{page.title}} | prepend: 'site.data.' %}
-{{y}}
+{% capture y %}
 {{site.data[page.title]}}
 {% capture x %}
 {% include tablegen.html i = y %} 
@@ -25,6 +24,6 @@ mission: 'false'
   </tr>
   <tr>
      
-     {% include tablegen.html i = {{site.data[page.title]}} %} 
+     {% include tablegen.html i = site.data[page.title] %} 
   </tr>
 </table>
