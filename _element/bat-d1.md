@@ -28,15 +28,5 @@ mission: 'false'
 
 {% endfor %}
 
+{% include tbheadgen.html x = site.data.bat-d1 %} 
 
-
-<table style = "margin-left:10px">
-  <tr>
-    <th> Parameter </th>
-    <th> value </th>
-  </tr>
-  <tr>
-    {% include tablegen.html i = site.data.bat-d1 %} 
-     
-  </tr>
-</table>
