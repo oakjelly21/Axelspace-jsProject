@@ -1,6 +1,6 @@
 ---
 title: "bat-d1"
-ymlfile: 'site.data.bat-d1'
+ymlfile: site.data.bat-d1
 layout: 'single'
 aocs: 'false'
 eps: 'true'
