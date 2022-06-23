@@ -36,7 +36,7 @@ mission: 'false'
     <th> value </th>
   </tr>
   <tr>
-    {% include tablegen.html i = ymlfile %} 
+    {% include tablegen.html i = site.data.bat-d1 %} 
      
   </tr>
 </table>
