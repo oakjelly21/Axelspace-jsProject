@@ -37,5 +37,5 @@ data:
 
 {% endfor %}
 
-{% include tbheadgen.html x = data %} 
+{% include tbheadgen.html x = page.data %} 
 
