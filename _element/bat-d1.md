@@ -30,6 +30,8 @@ data:
 
 {{y}}
 
+{{page.data}}
+
 {% for test in k %}
 {{test}}<br>
 <br>
