@@ -33,7 +33,5 @@ stuff:
 
 
 
-{% endfor %}
-
 {% include tbheadgen.html x = page.stuff %} 
 
