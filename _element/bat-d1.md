@@ -21,7 +21,7 @@ mission: 'false'
 {% assign k = y |  split: ',' %}
 {{y}}
 
-{% for test in y%}
+{% for test in k %}
 {{test}}<br>
 <br>
 
