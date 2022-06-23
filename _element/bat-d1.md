@@ -36,7 +36,7 @@ mission: 'false'
     <th> value </th>
   </tr>
   <tr>
-    {% include tablegen.html i = k %} 
+    {% include tablegen.html i = y %} 
      
   </tr>
 </table>
