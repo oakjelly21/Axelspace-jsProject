@@ -9,7 +9,9 @@ str: 'false'
 mission: 'false'
 ---
 
+{% capture y %}
 {{site.data[page.title]}}
+{% endcapture %}
 
 {% capture x %}
 {% include tablegen.html i =site.data.bat-d1%} 
@@ -23,7 +25,7 @@ mission: 'false'
     <th> value </th>
   </tr>
   <tr>
-     
+    {% include tablegen.html i = y %} 
      
   </tr>
 </table>
