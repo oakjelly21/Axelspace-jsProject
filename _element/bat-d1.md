@@ -18,7 +18,7 @@ mission: 'false'
 {% include tablegen.html i =site.data.bat-d1%} 
 {% endcapture %}
 
-{for test in y%}
+{% for test in y%}
 {{test}}<br>
 {% endfor %}
 
