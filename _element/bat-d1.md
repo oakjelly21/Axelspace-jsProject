@@ -11,14 +11,13 @@ mission: 'false'
 ---
 
 {% capture y %}
-{{site.data.[page.title]| json_string}}
+{{site.data.[page.title]| slugify }}
 {% endcapture %}
 
 {% capture x %}
 {% include tablegen.html i =site.data.bat-d1%} 
 {% endcapture %}
 
-{% assign k = y |  split: ',' %}
 {{y}}
 
 {% for test in k %}
@@ -28,5 +27,5 @@ mission: 'false'
 
 {% endfor %}
 
-{% include tbheadgen.html x = site.data.bat-d1 %} 
+{% include tbheadgen.html x = y %} 
 
