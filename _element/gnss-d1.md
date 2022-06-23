@@ -11,4 +11,4 @@ mission: 'false'
 
 
 
-{% include tbheadgen.html i=site.data.gnss-d1 %}
+{% include tbheadgen.html x=site.data.gnss-d1 %}
