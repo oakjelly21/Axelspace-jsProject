@@ -1,5 +1,6 @@
 ---
 title: "bat-d1"
+ymlfile: 'site.data.bat-d1'
 layout: 'single'
 aocs: 'false'
 eps: 'true'
@@ -25,7 +26,7 @@ mission: 'false'
     <th> value </th>
   </tr>
   <tr>
-    {% include tablegen.html i = site.data[bat-d1] %} 
+    {% include tablegen.html i = page.ymlfile %} 
      
   </tr>
 </table>
