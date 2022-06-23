@@ -36,7 +36,7 @@ mission: 'false'
     <th> value </th>
   </tr>
   <tr>
-    {% include tablegen.html i = page.ymlfile %} 
+    {% include tablegen.html i = ymlfile %} 
      
   </tr>
 </table>
