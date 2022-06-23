@@ -10,7 +10,7 @@ mission: 'false'
 ---
 
 {% capture y %}
-{{site.data[page.title] | jsonify }}
+{{site.data.[page.title] | jsonify }}
 {% endcapture %}
 
 {% capture x %}
