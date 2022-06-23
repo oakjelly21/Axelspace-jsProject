@@ -33,5 +33,5 @@ stuff:
 
 
 
-{% include tbheadgen.html x = page.stuff %} 
+{% include tbheadgen.html x = page.stuff[1] %} 
 
