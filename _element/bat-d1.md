@@ -24,6 +24,6 @@ mission: 'false'
   </tr>
   <tr>
      
-     {{x}}
+     
   </tr>
 </table>
