@@ -1301,7 +1301,7 @@ html ::selection{
     background:#ffdd57;
     color:#310736
 }
-.finder-item-link .light--aocs .light--eps{
+.finder-item-link .light--experimental{
     margin-left:4px;
     position:relative;
     top:-1px
