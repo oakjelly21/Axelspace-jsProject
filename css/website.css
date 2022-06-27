@@ -1354,7 +1354,7 @@ label.light input{
     color:#310736;
     opacity:1
 }
-.finder-item--eps .light--eps,.is-active{
+.finder-item--eps .light--eps,.light--eps.is-active{
     background-color:rgba(184,107,255,0.29);
     color:#333;
     opacity:1
