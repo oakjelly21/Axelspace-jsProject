@@ -8,7 +8,7 @@ cdh: 'false'
 comm: 'false'
 str: 'false'
 mission: 'false'
-stuff:
+data:
     -頭字語 /Acronym: BAT
     -機器概説 /Device Outline: Battery
     -帰属 /Subsystem: EPS
@@ -20,12 +20,6 @@ stuff:
             -機能/Functions: 1)太陽電池から供給される電力を蓄積する。<br>2)機器へ電力を供給する。
 ---
 
-{% for item in page.stuff %}
-{{item}}
-{% endfor %}
-{% capture y %}
-{{page.stuff}}
-{% endcapture %}
 
-{% include tbheadgen.html x = page.stuff %} 
+{% include tbheadgen.html x = page.data %} 
 
