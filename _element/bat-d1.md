@@ -21,8 +21,8 @@ stuff:
 ---
 
 {% capture y %}
-site.data.{{page.title]}}
+{{page.stuff}}
 {% endcapture %}
 
-{% include tbheadgen.html x = page.stuff %} 
+{% include tbheadgen.html x = y %} 
 
