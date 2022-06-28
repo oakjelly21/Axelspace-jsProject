@@ -27,5 +27,5 @@ stuff:
 {{page.stuff}}
 {% endcapture %}
 
-{% include tbheadgen.html x = y %} 
+{% include tbheadgen.html x = page.stuff %} 
 
