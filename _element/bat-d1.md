@@ -21,5 +21,5 @@ data:
 ---
 
 
-{% include tbheadgen.html x = page.data %} 
+
 
