@@ -20,9 +20,9 @@ stuff:
         -機能/Functions: 1)太陽電池から供給される電力を蓄積する。<br>2)機器へ電力を供給する。
 ---
 
-{{page.title}}
-{{page.aocs}}
-{{page.stuff}}
+{% for item in page.stuff %}
+{{item}}
+{% endfor %}
 {% capture y %}
 {{page.stuff}}
 {% endcapture %}
