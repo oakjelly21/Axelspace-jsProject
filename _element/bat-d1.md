@@ -24,5 +24,5 @@ stuff:
 site.data.{{page.title]}}
 {% endcapture %}
 
-{% include tbheadgen.html x = y %} 
+{% include tbheadgen.html x = page.stuff %} 
 
