@@ -23,9 +23,7 @@ data:
 
 {% raw %}
 <script>
-    var diagramSource = 'digraph G {
-  Hello->World
-}`
+    var diagramSource = 'digraph G {Hello->World}`
 </script>
 {% endraw %}
 
