@@ -23,7 +23,16 @@ data:
 
 {% raw %}
 <script>
-    var diagramSource = 'digraph G {Hello->World}`
+    var diagramSource = 'digraph G { Hello->World }'
+
+    var data = textEncode(diagramSource) 
+    var compressed = pako.deflate(data, { level: 9, to: 'string' }) 
+    var result = btoa(compressed) 
+      .replace(/\+/g, '-').replace(/\//g, '_') 
+    var img = document.createElement("img");
+    img.src = "https://kroki.io/graphviz/svg/" + result;
+    document.body.appendChild(img);
 </script>
+{% endraw %}
 {% endraw %}
 
