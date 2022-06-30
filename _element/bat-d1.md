@@ -32,4 +32,5 @@ var result = btoa(compressed)
 
 console.log(result)
 </script>
+{% endraw %}
 
