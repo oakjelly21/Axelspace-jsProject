@@ -21,7 +21,7 @@ data:
 ---
 
 
-{ % raw %}
+{% raw %}
 <script>
     var diagramSource = 'digraph G { Hello->World }'
 
