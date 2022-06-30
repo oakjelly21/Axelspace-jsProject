@@ -23,70 +23,9 @@ data:
 
 {% raw %}
 <script>
-    var diagramSource = 'title
-__Hosted Payload Interface Diagram__
-end title
-
-scale 0.8
-skinparam nodesep 30
-skinparam ranksep 50
-left to right direction
-
-rectangle {
-component Satellite {
-  component Connector_S2PH
-  component OBC
-  component STR_PZ_Panel
-  component Thermometer
-  component Thermal_Insulator
-  component Fasteners
-  component Others
-}
-component GroundSystem
-}
-component Payload 
-component PayloadUser
-component Payload_Harness
-together {
-interface Electrical_Interface as "Electical\nI/F"
-interface Data_Interface as "Data I/F"
-interface Mechanical_Interface as "Thermal I/F\nStructural I/F"
-interface Orbit_Interface as "Orbit I/F"
-interface Electrical_Connector_Interface as  "Electrical\nConnector\nI/F"
-interface Environmental_Interface as "Environmental\nI/F"
-}
-interface UserInterface as "User I/F"
-
-PayloadUser -- UserInterface
-UserInterface -- GroundSystem
-GroundSystem -left- Satellite
-OBC -- Connector_S2PH
-OBC -- Electrical_Interface
-OBC -- Data_Interface
-Connector_S2PH -- Electrical_Connector_Interface
-STR_PZ_Panel -- Mechanical_Interface
-Thermometer -- Mechanical_Interface
-Thermal_Insulator -- Mechanical_Interface
-Fasteners -- Mechanical_Interface
-Satellite -- Orbit_Interface
-Satellite -- Environmental_Interface
-
-Electrical_Connector_Interface -- Payload_Harness 
-Payload_Harness -- Payload
-
-Electrical_Interface -- Payload
-Data_Interface -- Payload
-Mechanical_Interface -- Payload
-Orbit_Interface --Payload
-Environmental_Interface --Payload'
-
-    var data = textEncode(diagramSource) 
-    var compressed = pako.deflate(data, { level: 9, to: 'string' }) 
-    var result = btoa(compressed) 
-      .replace(/\+/g, '-').replace(/\//g, '_') 
-    var img = document.createElement("img");
-    img.src = "https://kroki.io/plantuml/svg/" + result;
-    document.body.appendChild(img);
+    var diagramSource = 'digraph G {
+  Hello->World
+}`
 </script>
 {% endraw %}
 
