@@ -31,7 +31,7 @@ data:
     var result = btoa(compressed) 
       .replace(/\+/g, '-').replace(/\//g, '_') 
     var img = document.createElement("img");
-    img.src = "https://kroki.io/graphviz/svg/" + result;
+    img.src = "https://kroki.io/plantuml/svg/" + result;
     document.body.appendChild(img);
 </script>
 {% endraw %}
