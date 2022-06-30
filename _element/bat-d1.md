@@ -23,8 +23,7 @@ data:
 
 {% raw %}
 <script>
-    var diagramSource = '
-title
+    var diagramSource = 'title
 __Hosted Payload Interface Diagram__
 end title
 
@@ -79,9 +78,7 @@ Electrical_Interface -- Payload
 Data_Interface -- Payload
 Mechanical_Interface -- Payload
 Orbit_Interface --Payload
-Environmental_Interface --Payload
-
-'
+Environmental_Interface --Payload'
 
     var data = textEncode(diagramSource) 
     var compressed = pako.deflate(data, { level: 9, to: 'string' }) 
