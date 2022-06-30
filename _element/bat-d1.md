@@ -21,5 +21,15 @@ data:
 ---
 
 
+{ % raw %}
+<script>
+    var diagramSource = 'digraph G { Hello->World }'
 
+var data = textEncode(diagramSource) 
+var compressed = pako.deflate(data, { level: 9, to: 'string' }) 
+var result = btoa(compressed) 
+  .replace(/\+/g, '-').replace(/\//g, '_') 
+
+console.log(result)
+</script>
 
