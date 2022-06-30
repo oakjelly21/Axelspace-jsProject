@@ -34,5 +34,5 @@ data:
     document.body.appendChild(img);
 </script>
 {% endraw %}
-{% endraw %}
+
 
