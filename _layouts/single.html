@@ -30,9 +30,20 @@
     <meta name="twitter:title" content="{{page.elementName}} - {{site.title}}">
     <meta name="twitter:image" content="{{site.url}}/images/html-reference-share.png">
     <meta name="twitter:description" content="Learn how {{page.elementName}} works in HTML.">
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+    <script src="https://unpkg.com/pako@1.0.10/dist/pako_deflate.min.js"></script>
+    <script>
+      function textEncode(str) {
+          if (window.TextEncoder) {
+            return new TextEncoder('utf-8').encode(str);
+          }
+          var utf8 = unescape(encodeURIComponent(str));
+          var result = new Uint8Array(utf8.length);
+          for (var i = 0; i < utf8.length; i++) {
+            result[i] = utf8.charCodeAt(i);
+          }
+          return result;
+        }
+    </script>
     
   </head>
   <body>
