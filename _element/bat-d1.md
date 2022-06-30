@@ -24,7 +24,7 @@ data:
 {% raw %}
 <script>
     var fr = new FileReader();
-    var diagramSource = fr.readAsText("/assets/imgtext.txt")
+    var diagramSource = fetch("/assets/imgtext.txt")
 
     var data = textEncode(diagramSource) 
     var compressed = pako.deflate(data, { level: 9, to: 'string' }) 
